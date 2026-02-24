@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malaysia Fabrics & Textiles — Board-Level Strategic Intelligence Report 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg-page: #F0F4F8;
+  --bg-surface: #FFFFFF;
+  --bg-dark: #0B1628;
+  --bg-alt: #F7F9FC;
+  --text-main: #2D3748;
+  --text-dark: #0B1628;
+  --text-muted: #64748B;
+  --text-light: #F8FAFC;
+  --accent-gold: #C9A84C;
+  --accent-gold-light: rgba(201,168,76,0.12);
+  --accent-blue: #1A56DB;
+  --accent-blue-light: rgba(26,86,219,0.1);
+  --accent-teal: #0D9488;
+  --accent-teal-light: rgba(13,148,136,0.1);
+  --accent-red: #DC2626;
+  --accent-red-light: rgba(220,38,38,0.1);
+  --accent-green: #059669;
+  --accent-green-light: rgba(5,150,105,0.1);
+  --border-color: #E2E8F0;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--bg-page); color: var(--text-main); line-height:1.65; font-size:15px; }
+
+h1,h2,h3,h4,h5 { font-family: var(--font-heading); color: var(--text-dark); line-height:1.2; margin-bottom:16px; }
+h1 { font-size: clamp(30px,5vw,52px); font-weight:900; }
+h2 { font-size: clamp(24px,4vw,36px); font-weight:700; margin-top:24px; border-bottom:3px solid var(--accent-gold); padding-bottom:10px; display:inline-block; }
+h3 { font-size:22px; font-weight:700; margin-top:36px; color:var(--accent-teal); }
+h4 { font-size:17px; font-weight:600; margin-top:20px; }
+p { margin-bottom:14px; }
+ul,ol { margin-bottom:14px; padding-left:24px; }
+li { margin-bottom:8px; color:var(--text-main); }
+strong { color: var(--text-dark); font-weight:600; }
+em { font-style:italic; color:var(--text-muted); }
+
+.container { max-width:1280px; margin:0 auto; padding:0 40px; }
+section { padding:80px 0; border-bottom:1px solid var(--border-color); }
+
+/* NAVBAR */
+.navbar {
+  position:sticky; top:0; z-index:1000;
+  background:rgba(11,22,40,0.97); backdrop-filter:blur(10px);
+  padding:14px 40px;
+  display:flex; gap:20px; overflow-x:auto;
+  border-bottom:3px solid var(--accent-gold);
+}
+.navbar a {
+  font-family:var(--font-mono); font-size:11px; color:var(--text-light);
+  text-decoration:none; text-transform:uppercase; letter-spacing:0.1em;
+  white-space:nowrap; transition:color .2s; opacity:.8;
+}
+.navbar a:hover { color:var(--accent-gold); opacity:1; }
+
+/* HERO */
+.hero { background:var(--bg-dark); color:var(--text-light); padding:100px 0; position:relative; overflow:hidden; }
+.hero::before {
+  content:''; position:absolute; inset:0;
+  background: repeating-linear-gradient(45deg,transparent,transparent 50px,rgba(201,168,76,.025) 50px,rgba(201,168,76,.025) 51px);
+}
+.hero::after {
+  content:''; position:absolute; bottom:0; left:0; right:0; height:4px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-teal), var(--accent-blue));
+}
+.hero-content { position:relative; z-index:1; }
+.hero h1 { color:var(--text-light); }
+.hero h1 span { color:var(--accent-gold); }
+.hero-badge {
+  display:inline-block; font-family:var(--font-mono); font-size:11px;
+  color:var(--accent-gold); border:1px solid rgba(201,168,76,.5);
+  padding:6px 16px; border-radius:2px; margin-bottom:24px; letter-spacing:.2em; text-transform:uppercase;
+}
+.hero-meta { display:flex; gap:48px; margin-top:48px; flex-wrap:wrap; }
+.hero-meta-item { }
+.hero-meta-label { font-family:var(--font-mono); font-size:10px; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.1em; margin-bottom:6px; }
+.hero-meta-val { font-family:var(--font-heading); font-size:28px; font-weight:700; color:var(--accent-gold); }
+.hero-meta-sub { font-size:12px; color:rgba(255,255,255,.6); margin-top:4px; }
+
+/* GRIDS */
+.grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; margin-bottom:24px; }
+.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-bottom:24px; }
+.grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-bottom:24px; }
+
+/* CARDS */
+.card {
+  background:var(--bg-surface); border:1px solid var(--border-color);
+  border-radius:6px; padding:28px; box-shadow:0 2px 12px rgba(0,0,0,.05);
+  height:100%;
+}
+.card p { color:var(--text-main); }
+.card li { color:var(--text-main); }
+.card h4 { color:var(--text-dark); }
+.card-top-gold { border-top:4px solid var(--accent-gold); }
+.card-top-teal { border-top:4px solid var(--accent-teal); }
+.card-top-red { border-top:4px solid var(--accent-red); }
+.card-top-blue { border-top:4px solid var(--accent-blue); }
+.card-top-green { border-top:4px solid var(--accent-green); }
+.card-dark { background:var(--bg-dark); color:var(--text-light); }
+.card-dark h4 { color:#E2E8F0; }
+.card-dark p { color:#CBD5E1; }
+.card-dark li { color:#CBD5E1; }
+.card-dark strong { color:#FCD34D; }
+
+/* Colored top-border cards on dark section backgrounds — keep text dark and readable */
+.card-top-green p, .card-top-green li { color:var(--text-main); }
+.card-top-green strong { color:#064E3B; }
+.card-top-blue p, .card-top-blue li { color:var(--text-main); }
+.card-top-blue strong { color:#1E3A8A; }
+.card-top-red p, .card-top-red li { color:var(--text-main); }
+.card-top-red strong { color:#7F1D1D; }
+.card-top-gold p, .card-top-gold li { color:var(--text-main); }
+.card-top-gold strong { color:#78350F; }
+.card-top-teal p, .card-top-teal li { color:var(--text-main); }
+.card-top-teal strong { color:#065F46; }
+
+/* KPI CARDS */
+.kpi-card {
+  background:var(--bg-dark); border:1px solid rgba(255,255,255,.08);
+  border-radius:6px; padding:28px; text-align:center;
+  position:relative; overflow:hidden;
+}
+.kpi-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:3px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-teal));
+}
+.kpi-val { font-family:var(--font-heading); font-size:38px; font-weight:900; color:var(--accent-gold); line-height:1; margin-bottom:8px; }
+.kpi-label { font-family:var(--font-mono); font-size:10px; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.1em; }
+.kpi-sub { font-size:12px; color:rgba(255,255,255,.6); margin-top:8px; }
+
+/* MONO LABEL */
+.mono-label { display:block; font-family:var(--font-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent-teal); margin-bottom:10px; }
+
+/* TAGS */
+.tag { display:inline-block; font-family:var(--font-mono); font-size:10px; padding:3px 8px; border-radius:2px; margin:0 4px 4px 0; text-transform:uppercase; font-weight:600; }
+.tag-high { background:var(--accent-red-light); color:var(--accent-red); }
+.tag-med { background:var(--accent-gold-light); color:#92400E; }
+.tag-low { background:var(--accent-teal-light); color:var(--accent-teal); }
+.tag-blue { background:var(--accent-blue-light); color:var(--accent-blue); }
+.tag-green { background:var(--accent-green-light); color:var(--accent-green); }
+
+/* TABLES */
+.table-wrapper { overflow-x:auto; margin-bottom:32px; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-surface); box-shadow:0 2px 8px rgba(0,0,0,.04); }
+table { width:100%; border-collapse:collapse; text-align:left; }
+th,td { padding:13px 18px; border-bottom:1px solid var(--border-color); }
+th { background:var(--bg-dark); color:var(--text-light); font-family:var(--font-mono); font-size:10px; text-transform:uppercase; letter-spacing:.06em; }
+tr:last-child td { border-bottom:none; }
+tr:nth-child(even) { background:var(--bg-alt); }
+tr:hover { background:rgba(201,168,76,.06); }
+
+/* HIGHLIGHT BOX */
+.highlight-box {
+  background:var(--accent-gold-light); border-left:4px solid var(--accent-gold);
+  padding:22px 28px; margin:24px 0; border-radius:0 6px 6px 0;
+  color:var(--text-dark);
+}
+.highlight-box p { color:var(--text-dark); }
+.highlight-box p strong { color:#78350F; }
+.highlight-box ul, .highlight-box ol { color:var(--text-dark); }
+.highlight-box li { color:var(--text-dark); }
+.highlight-box li strong { color:#78350F; }
+.highlight-box p:last-child { margin-bottom:0; }
+.highlight-box-teal { background:var(--accent-teal-light); border-left-color:var(--accent-teal); color:#1A3A38; }
+.highlight-box-teal p { color:#1A3A38; }
+.highlight-box-teal strong { color:#065F46; }
+.highlight-box-teal li { color:#1A3A38; }
+.highlight-box-blue { background:var(--accent-blue-light); border-left-color:var(--accent-blue); color:#1E3A5F; }
+.highlight-box-blue p { color:#1E3A5F; }
+.highlight-box-blue strong { color:#1E3A8A; }
+.highlight-box-blue li { color:#1E3A5F; }
+.highlight-box-red { background:var(--accent-red-light); border-left-color:var(--accent-red); color:#450A0A; }
+.highlight-box-red p { color:#450A0A; }
+.highlight-box-red strong { color:#7F1D1D; }
+.highlight-box-red li { color:#450A0A; }
+
+/* METRIC BLOCK */
+.metric-block { text-align:center; }
+.metric-val { font-family:var(--font-heading); font-size:38px; font-weight:900; color:var(--accent-teal); line-height:1; margin-bottom:8px; }
+.metric-label { font-family:var(--font-mono); font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.1em; }
+.metric-sub { font-size:12px; color:var(--text-muted); margin-top:6px; }
+
+/* FUNNEL */
+.funnel-tier { display:flex; margin-bottom:8px; text-align:center; align-items:center; color:var(--text-light); }
+.funnel-bar { flex:1; padding:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.funnel-tier:nth-child(1) .funnel-bar { background:var(--accent-teal); clip-path:polygon(0 0,100% 0,95% 100%,5% 100%); }
+.funnel-tier:nth-child(2) .funnel-bar { background:var(--accent-gold); clip-path:polygon(5% 0,95% 0,88% 100%,12% 100%); width:88%; margin:0 auto; }
+.funnel-tier:nth-child(3) .funnel-bar { background:var(--accent-red); clip-path:polygon(12% 0,88% 0,80% 100%,20% 100%); width:74%; margin:0 auto; }
+.funnel-label { font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:.1em; margin-bottom:6px; }
+.funnel-amount { font-family:var(--font-heading); font-size:30px; font-weight:900; margin-bottom:4px; }
+.funnel-desc { font-size:12px; opacity:.85; }
+
+/* CHAIN FLOW */
+.chain-flow { display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:20px; }
+.chain-node { background:var(--bg-surface); border:1px solid var(--border-color); padding:14px; text-align:center; border-radius:4px; flex:1; min-width:110px; }
+.chain-node .chain-val { color:var(--text-dark); }
+.chain-node .chain-label { color:var(--text-muted); }
+.chain-node.highlight { background:var(--accent-teal); color:var(--text-light); border-color:var(--accent-teal); }
+.chain-node.highlight .chain-val { color:#FFFFFF; }
+.chain-node.highlight .chain-label { color:rgba(255,255,255,.85); }
+.chain-node.highlight-gold { background:var(--accent-gold); color:var(--text-light); border-color:var(--accent-gold); }
+.chain-node.highlight-gold .chain-val { color:#FFFFFF; }
+.chain-node.highlight-gold .chain-label { color:rgba(255,255,255,.85); }
+.chain-val { font-family:var(--font-heading); font-size:22px; font-weight:700; margin-bottom:4px; }
+.chain-label { font-size:11px; line-height:1.3; opacity:.85; }
+
+/* RISK MATRIX */
+.risk-cell { text-align:center; padding:10px; font-size:12px; font-family:var(--font-mono); border-radius:4px; }
+.risk-critical { background:#7F1D1D; color:#FEF2F2; }
+.risk-high { background:#B91C1C; color:#FEF2F2; }
+.risk-medium { background:#D97706; color:#FFFBEB; }
+.risk-low { background:#065F46; color:#ECFDF5; }
+.risk-vlow { background:#A7F3D0; color:#064E3B; }
+
+/* CHART WRAPPERS */
+.chart-box { background:var(--bg-surface); border:1px solid var(--border-color); border-radius:6px; padding:28px; margin-bottom:24px; }
+.chart-box canvas { max-height:320px; }
+.chart-title { font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--text-muted); margin-bottom:16px; }
+
+/* EXEC SUMMARY */
+.exec-summary {
+  background:var(--bg-dark); color:var(--text-light);
+  padding:32px 40px; border-radius:6px; margin-top:40px;
+  border-left:6px solid var(--accent-gold);
+}
+.exec-summary h4 { color:var(--accent-gold); font-family:var(--font-mono); font-size:12px; letter-spacing:.15em; text-transform:uppercase; margin-bottom:12px; }
+.exec-summary p { color:#E2E8F0; margin-bottom:0; line-height:1.75; }
+.exec-summary p strong { color:#FCD34D; font-weight:700; }
+.exec-summary ul, .exec-summary ol { color:#E2E8F0; }
+.exec-summary li { color:#E2E8F0; }
+.exec-summary li strong { color:#FCD34D; }
+
+/* SCORE BAR */
+.score-bar { background:#E2E8F0; border-radius:4px; height:10px; margin-top:8px; overflow:hidden; }
+.score-fill { height:100%; border-radius:4px; background:linear-gradient(90deg, var(--accent-teal), var(--accent-blue)); }
+.score-fill-gold { background:linear-gradient(90deg, var(--accent-gold), #F59E0B); }
+.score-fill-red { background:linear-gradient(90deg, var(--accent-red), #EF4444); }
+
+/* AI CARD */
+.ai-card { background:linear-gradient(135deg, #0B1628 0%, #1E3A5F 100%); border:1px solid rgba(26,86,219,.3); border-radius:6px; padding:28px; color:#E2E8F0; }
+.ai-card h4 { color:#60A5FA; margin-bottom:12px; }
+.ai-card p { color:#CBD5E1; }
+.ai-card p strong { color:#FCD34D; font-weight:700; }
+.ai-card ul, .ai-card ol { color:#CBD5E1; }
+.ai-card li { color:#CBD5E1; }
+.ai-card li strong { color:#FCD34D; }
+.ai-badge { display:inline-block; background:rgba(26,86,219,.2); color:#93C5FD; font-family:var(--font-mono); font-size:10px; padding:3px 10px; border-radius:2px; border:1px solid rgba(26,86,219,.3); margin-bottom:12px; text-transform:uppercase; letter-spacing:.1em; }
+
+/* ROADMAP */
+.roadmap-phase { border-left:3px solid var(--accent-gold); padding-left:24px; margin-bottom:32px; position:relative; }
+.roadmap-phase::before { content:''; position:absolute; left:-8px; top:4px; width:13px; height:13px; background:var(--accent-gold); border-radius:50%; }
+.roadmap-phase h4 { color:var(--accent-gold); margin-top:0; margin-bottom:8px; }
+.roadmap-phase p { color:var(--text-main); }
+.roadmap-phase p strong { color:var(--text-dark); }
+
+/* SCENARIO */
+.scenario-card { border-radius:6px; padding:24px; margin-bottom:16px; }
+.scenario-best { background:var(--accent-teal-light); border:1px solid var(--accent-teal); }
+.scenario-best p, .scenario-best li { color:#1A3A38; }
+.scenario-best strong { color:#065F46; }
+.scenario-base { background:var(--accent-blue-light); border:1px solid var(--accent-blue); }
+.scenario-base p, .scenario-base li { color:#1E3A5F; }
+.scenario-base strong { color:#1E3A8A; }
+.scenario-worst { background:var(--accent-red-light); border:1px solid var(--accent-red); }
+.scenario-worst p, .scenario-worst li { color:#450A0A; }
+.scenario-worst strong { color:#7F1D1D; }
+.scenario-black { background:#1A1A1A; color:#E2E8F0; border:1px solid #555; }
+.scenario-black h4 { color:#F59E0B !important; }
+.scenario-black p { color:#CBD5E1 !important; }
+.scenario-black strong { color:#FCD34D !important; font-weight:700; }
+
+/* FOOTER */
+footer { background:var(--bg-dark); color:var(--text-light); padding:48px 40px; text-align:center; border-top:4px solid var(--accent-gold); }
+footer p { font-family:var(--font-mono); font-size:11px; letter-spacing:.1em; margin:0; opacity:.6; text-transform:uppercase; }
+
+
+/* Dark section inline cards — ensure li and p are readable */
+section[style*="bg-dark"] p:not([style]),
+section[style*="bg-dark"] li:not([style]) { color: #CBD5E1; }
+section[style*="bg-dark"] strong:not([style]) { color: #FCD34D; }
+/* Roadmap phase divs inside dark sections */
+.roadmap-ai-card p { color: #CBD5E1; }
+.roadmap-ai-card li { color: #CBD5E1; }
+.roadmap-ai-card strong { color: #FCD34D; }
+
+/* RESPONSIVE */
+@media (max-width:992px) { .grid-4 { grid-template-columns:repeat(2,1fr); } .grid-3 { grid-template-columns:1fr; } }
+@media (max-width:768px) { .grid-2,.grid-4 { grid-template-columns:1fr; } .container { padding:0 20px; } section { padding:40px 0; } }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="#overview">1. Exec Overview</a>
+  <a href="#mkt-strategy">2. Mkt Strategy</a>
+  <a href="#tam">3. TAM / SAM / SOM</a>
+  <a href="#mkt-segmentation">4. Segmentation</a>
+  <a href="#competitive">5. Competitive</a>
+  <a href="#mkt-positioning">6. Positioning</a>
+  <a href="#demand">7. Product Demand</a>
+  <a href="#pricing">8. Pricing</a>
+  <a href="#mkt-offers">9. Promo &amp; Offers</a>
+  <a href="#gtm">10. Go-To-Market</a>
+  <a href="#mkt-channels">11. Channel ROI</a>
+  <a href="#mkt-content">12. Content &amp; Demand</a>
+  <a href="#mkt-budget">13. Budget Model</a>
+  <a href="#ai">14. AI Opportunities</a>
+  <a href="#mkt-ai">15. AI Marketing</a>
+  <a href="#risk">16. Risk &amp; Scenarios</a>
+  <a href="#financial">17. Financial Proj.</a>
+  <a href="#mkt-kpi">18. KPI Dashboard</a>
+</nav>
+
+<header class="hero">
+  <div class="container hero-content">
+    <div class="hero-badge">Board-Level Strategic Intelligence · Malaysia · 2026</div>
+    <h1>Fabrics & Textiles<br><span>Strategic Master Report</span></h1>
+    <p style="font-size:17px; max-width:750px; margin-top:20px; color:rgba(255,255,255,.75);">
+      A comprehensive board-level strategic intelligence report for a China-factory-backed B2B + B2C fabric business entering Malaysia. All projections are calibrated to realistic Year 1 performance for a new brand with no existing customer base, no reviews, and no market awareness — starting from Day 1.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Malaysia TAM (2025)</div>
+        <div class="hero-meta-val">$3.49B</div>
+        <div class="hero-meta-sub">Total textile market</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">5-Year CAGR</div>
+        <div class="hero-meta-val">5.1%</div>
+        <div class="hero-meta-sub">Fabric segment growing faster</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Revenue Potential (Yr 3)</div>
+        <div class="hero-meta-val">RM 3.2M</div>
+        <div class="hero-meta-sub">Base case projection</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">AI Opportunity Score</div>
+        <div class="hero-meta-val">8.7/10</div>
+        <div class="hero-meta-sub">Highest in ASEAN textile</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Market Entry Confidence</div>
+        <div class="hero-meta-val">7.9/10</div>
+        <div class="hero-meta-sub">STRONG BUY</div>
+      </div>
+    </div>
+  </div>
+</header>
+<div style="background:#431407; border-top:3px solid #F97316; border-bottom:3px solid #F97316; padding:18px 40px; text-align:center;">
+  <p style="font-family:var(--font-mono); font-size:11px; color:#FED7AA; letter-spacing:.06em; text-transform:uppercase; margin:0;">
+    ⚠&nbsp; <strong style="color:#FB923C;">Realism Note:</strong>&nbsp; All projections assume Day 1 = today with zero brand recognition, zero reviews, and zero customers. Year 1 is a <strong style="color:#FB923C;">brand-building year, not a profit year</strong>. Your first real Hari Raya opportunity is <strong style="color:#FB923C;">Raya 2027 (~Month 12–14 from start)</strong>. Plan for 18–24 months before expecting consistent profitability.
+  </p>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 1: EXECUTIVE OVERVIEW DASHBOARD
+═══════════════════════════════════════════════════════════════ -->
+<section id="overview">
+  <div class="container">
+    <span class="mono-label">01 / Executive Overview</span>
+    <h2>Executive Overview Dashboard</h2>
+    <p><strong>Prepared For:</strong> Board of Directors | <strong>Business:</strong> China-factory fabric supplier, own logistics, B2B + B2C | <strong>Market Focus:</strong> Malaysia primary + export</p>
+
+    <h3>KPI Summary Dashboard</h3>
+    <div class="grid-4">
+      <div class="kpi-card">
+        <div class="kpi-val">$3.49B</div>
+        <div class="kpi-label">Malaysia TAM (2025)</div>
+        <div class="kpi-sub">Growing at 5.12% CAGR → $4.47B by 2030</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">$210M</div>
+        <div class="kpi-label">Serviceable Obtainable Market</div>
+        <div class="kpi-sub">Malay consumers + SME fabric buyers</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">RM 1.2M</div>
+        <div class="kpi-label">Year 1 Revenue Target</div>
+        <div class="kpi-sub">Base case — achievable with JV + digital</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">42%</div>
+        <div class="kpi-label">Target Gross Margin</div>
+        <div class="kpi-sub">B2C 45–65% | B2B 28–38%</div>
+      </div>
+    </div>
+    <div class="grid-4">
+      <div class="kpi-card">
+        <div class="kpi-val">8.7/10</div>
+        <div class="kpi-label">AI Opportunity Score</div>
+        <div class="kpi-sub">Demand forecasting + defect detection highest ROI</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">Month 20</div>
+        <div class="kpi-label">Break-Even (Base Case)</div>
+        <div class="kpi-sub">Month 10 best case | Month 22 conservative</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">5 KEY</div>
+        <div class="kpi-label">Top Product Opportunities</div>
+        <div class="kpi-sub">Chiffon, Lace, Cotton Batik, Satin, Functional Fabric</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">MEDIUM</div>
+        <div class="kpi-label">Overall Risk Heat</div>
+        <div class="kpi-sub">FX + supply chain = most critical vectors</div>
+      </div>
+    </div>
+
+    <h3>Top 3 Strategic Product Opportunities</h3>
+    <div class="grid-3">
+      <div class="card card-top-gold">
+        <h4>🥇 #1 — Festive Chiffon & Lace (Hari Raya)</h4>
+        <p><strong>Demand Confidence:</strong> 9.5/10 | <strong>Gross Margin:</strong> 55–70%</p>
+        <p>21.7M Malay Malaysians purchase new fabric annually for Hari Raya. Chiffon and embroidered lace are the #1 purchased fabric types for baju kurung and kebaya. Zero dominant digital-first supplier exists. Festive premium pricing is inelastic.</p>
+        <p><span class="tag tag-green">RM 45–150/m</span> <span class="tag tag-high">HIGH DEMAND</span></p>
+      </div>
+      <div class="card card-top-teal">
+        <h4>🥈 #2 — Halal-Certified Functional Fabric</h4>
+        <p><strong>Demand Confidence:</strong> 8.8/10 | <strong>Gross Margin:</strong> 48–62%</p>
+        <p>JAKIM Halal certification for cool-touch, moisture-wicking modest-wear fabric is an entirely unoccupied white space. Muslim middle class (growing RM 5K–12K/mo household income bracket) will pay 20–30% premiums. Export potential to OIC countries.</p>
+        <p><span class="tag tag-green">RM 38–80/m</span> <span class="tag tag-blue">WHITE SPACE</span></p>
+      </div>
+      <div class="card card-top-blue">
+        <h4>🥉 #3 — B2B Industrial Uniforms / Institutional</h4>
+        <p><strong>Demand Confidence:</strong> 8.2/10 | <strong>Gross Margin:</strong> 28–38%</p>
+        <p>42,000 Malaysian SMEs + hospitality, healthcare, and education sectors collectively purchase RM 2B+ in uniform and institutional textile annually. Digital procurement is near-zero. Your factory + logistics provides a structural cost and speed advantage over fragmented competition.</p>
+        <p><span class="tag tag-med">RM 12–40/m</span> <span class="tag tag-blue">HIGH VOLUME</span></p>
+      </div>
+    </div>
+
+    <h3>3-Year Revenue Projection Overview</h3>
+    <div class="chart-box">
+      <div class="chart-title">Revenue Projection — 3 Scenarios (RM Million)</div>
+      <canvas id="revenueOverviewChart"></canvas>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 1 — Executive Summary</h4>
+      <p>Malaysia presents a <strong>high-confidence, near-term entry opportunity</strong> for a China-factory-backed fabric business. The market is structurally attractive: a USD 3.49B TAM growing at 5.12% CAGR, a Muslim-majority population with deeply-embedded festive fabric consumption, and a competitive landscape where no major player has successfully combined JAKIM halal certification with digital-native social commerce. The business case is strongest in three areas — festive chiffon/lace (peak Hari Raya demand), halal functional fabric (unoccupied premium niche), and B2B institutional/industrial procurement. A realistic base case projection of <strong>RM 280–420K Year 1 revenue scaling to RM 1.6–2.0M by Year 3</strong> — achievable with disciplined execution, a Raya 2027 focus, and steady B2B relationship building. AI tools can improve efficiency incrementally, not miraculously. Market entry confidence score: <strong>7.2/10 — VIABLE with realistic expectations.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 2: STRATEGIC MARKETING OVERVIEW
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-strategy" style="background:var(--bg-dark); color:var(--text-light);">
+  <div class="container">
+    <span class="mono-label" style="color:var(--accent-gold);">M02 / Marketing Strategic Overview</span>
+    <h2 style="color:var(--text-light); border-color:var(--accent-gold);">Strategic Marketing Overview</h2>
+    <p style="color:#CBD5E1;">Institutional-grade marketing thesis for a China-backed fabric business executing a dual B2B + B2C strategy in Malaysia with ASEAN export ambition.</p>
+
+    <h3 style="color:var(--accent-gold);">Marketing Thesis</h3>
+    <p style="color:#CBD5E1;">The business is not entering Malaysia as a commodity fabric supplier. It is entering as a <strong>tech-enabled, halal-certified, vertically integrated textile platform</strong> — the only operator combining China factory precision, in-house logistics speed, JAKIM certification, and AI-powered operations under one brand. The marketing strategy must communicate this infrastructure superiority at every touchpoint: B2B buyers must feel they are hiring a partner, not purchasing a product. B2C consumers must feel they are accessing a curated, culturally intelligent premium source.</p>
+
+    <h3 style="color:var(--accent-gold);">Primary Revenue Engine — B2B vs B2C Weighted Split</h3>
+    <div class="grid-3">
+      <div style="background:rgba(13,148,136,.15); border:1px solid var(--accent-teal); border-radius:6px; padding:24px; text-align:center;">
+        <div style="font-family:var(--font-heading); font-size:42px; font-weight:900; color:var(--accent-teal);">58%</div>
+        <div style="font-family:var(--font-mono); font-size:11px; color:rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:.1em; margin-bottom:8px;">B2B Revenue Weight</div>
+        <p style="font-size:13px; color:#CBD5E1; margin:0;">Higher LTV, lower CAC at scale, contracts, repeat orders. The profit engine. Target: fashion boutiques, uniform manufacturers, hospitality, industrial buyers.</p>
+      </div>
+      <div style="background:rgba(201,168,76,.12); border:1px solid var(--accent-gold); border-radius:6px; padding:24px; text-align:center;">
+        <div style="font-family:var(--font-heading); font-size:42px; font-weight:900; color:var(--accent-gold);">42%</div>
+        <div style="font-family:var(--font-mono); font-size:11px; color:rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:.1em; margin-bottom:8px;">B2C Revenue Weight</div>
+        <p style="font-size:13px; color:#CBD5E1; margin:0;">Brand builder, faster feedback loop, festive peak revenue. Feeds B2B pipeline through brand credibility. Target: Malay festive consumers, modest fashion buyers, online marketplace shoppers.</p>
+      </div>
+      <div style="background:rgba(26,86,219,.12); border:1px solid var(--accent-blue); border-radius:6px; padding:24px; text-align:center;">
+        <div style="font-family:var(--font-heading); font-size:42px; font-weight:900; color:#60A5FA;">RM 2.0M</div>
+        <div style="font-family:var(--font-mono); font-size:11px; color:rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:.1em; margin-bottom:8px;">Year 3 Revenue Target</div>
+        <p style="font-size:13px; color:#CBD5E1; margin:0;">B2B: RM 1.16M (58%) | B2C: RM 0.84M (42%). ASEAN export possible Year 3–4 if B2B relationships established.</p>
+      </div>
+    </div>
+
+    <h3 style="color:var(--accent-gold);">Brand Positioning: Tech-Enabled Textile Platform</h3>
+    <div class="highlight-box" style="background:rgba(201,168,76,.1); border-left-color:var(--accent-gold);">
+      <p style="color:#E2E8F0;"><strong style="color:#FCD34D;">Market Positioning Statement:</strong> "The only Malaysia-based fabric supplier combining JAKIM-certified halal production, China factory precision, AI-driven demand forecasting, and same-week logistics delivery — built for B2B partners who demand reliability and B2C consumers who demand identity."</p>
+      <p style="color:#E2E8F0; margin-bottom:0;">This positioning occupies the intersection of <strong style="color:#FCD34D;">premium + certified + tech-enabled + culturally intelligent</strong> — a quadrant no existing competitor currently occupies.</p>
+    </div>
+
+    <h3 style="color:var(--accent-gold);">3 Core Strategic Pillars</h3>
+    <div class="grid-3">
+      <div style="background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); border-top:4px solid var(--accent-teal); border-radius:6px; padding:24px;">
+        <h4 style="color:var(--accent-teal); margin-top:0;">Pillar 1 — Infrastructure Moat</h4>
+        <p style="color:#CBD5E1;">Own factory + own logistics = structural cost and speed advantage that no distributor or reseller competitor can replicate without RM 2M+ capital investment. Market this as a feature, not a background fact. Every B2B proposal leads with "we own the factory."</p>
+        <p style="color:#94A3B8; font-size:12px; font-family:var(--font-mono);">PRIMARY B2B DIFFERENTIATOR</p>
+      </div>
+      <div style="background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); border-top:4px solid var(--accent-gold); border-radius:6px; padding:24px;">
+        <h4 style="color:var(--accent-gold); margin-top:0;">Pillar 2 — Cultural Intelligence</h4>
+        <p style="color:#CBD5E1;">Deep Malay festive fabric expertise — Hari Raya sedondon bundles, JAKIM certification, Bahasa Malaysia content, hijab-optimized fabric performance. No foreign or industrial player can credibly own this identity positioning. This is a <strong style="color:#FCD34D; font-weight:700;">moat built from cultural specificity.</strong></p>
+        <p style="color:#94A3B8; font-size:12px; font-family:var(--font-mono);">PRIMARY B2C DIFFERENTIATOR</p>
+      </div>
+      <div style="background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.1); border-top:4px solid #60A5FA; border-radius:6px; padding:24px;">
+        <h4 style="color:#60A5FA; margin-top:0;">Pillar 3 — AI-Powered Reliability</h4>
+        <p style="color:#CBD5E1;">Demand forecasting, computer vision QC, automated B2B quoting, and AI pattern generation position this brand as the most technologically advanced textile supplier in the Malaysian market. <strong style="color:#FCD34D;">Technology becomes the trust signal</strong> for both institutional B2B buyers and discerning B2C consumers.</p>
+        <p style="color:#94A3B8; font-size:12px; font-family:var(--font-mono);">B2B + B2C DIFFERENTIATOR</p>
+      </div>
+    </div>
+
+    <h3 style="color:var(--accent-gold);">Revenue Contribution Forecast by Segment</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Segment</th><th>Year 1 Revenue</th><th>Year 2 Revenue</th><th>Year 3 Revenue</th><th>% of Mix (Yr3)</th><th>Growth Driver</th></tr></thead>
+        <tbody>
+          <tr><td><strong>B2C Festive (Raya/CNY)</strong></td><td style="color:var(--text-main);">RM 140K</td><td style="color:var(--text-main);">RM 380K</td><td style="color:var(--text-main);">RM 580K</td><td style="color:var(--text-main);">28%</td><td style="color:var(--text-main);">TikTok + Shopee ads, influencer seeding</td></tr>
+          <tr><td><strong>B2B Fashion Boutiques</strong></td><td style="color:var(--text-main);">RM 80K</td><td style="color:var(--text-main);">RM 260K</td><td style="color:var(--text-main);">RM 520K</td><td style="color:var(--text-main);">25%</td><td style="color:var(--text-main);">WhatsApp outreach, trade referrals, samples</td></tr>
+          <tr><td><strong>B2B Industrial / Uniforms</strong></td><td style="color:var(--text-main);">RM 40K</td><td style="color:var(--text-main);">RM 180K</td><td style="color:var(--text-main);">RM 420K</td><td style="color:var(--text-main);">21%</td><td style="color:var(--text-main);">Direct sales, RFQ participation, ISO cert</td></tr>
+          <tr><td><strong>B2C Functional / Halal</strong></td><td style="color:var(--text-main);">RM 20K</td><td style="color:var(--text-main);">RM 110K</td><td style="color:var(--text-main);">RM 280K</td><td style="color:var(--text-main);">14%</td><td style="color:var(--text-main);">SEO, premium positioning, JAKIM marketing</td></tr>
+          <tr><td><strong>B2B Export / ASEAN</strong></td><td style="color:var(--text-main);">RM 0</td><td style="color:var(--text-main);">RM 30K</td><td style="color:var(--text-main);">RM 180K</td><td style="color:var(--text-main);">12%</td><td style="color:var(--text-main);">Alibaba, export agents, Singapore/Indonesia</td></tr>
+          <tr style="background:var(--accent-gold-light);"><td><strong>TOTAL</strong></td><td><strong>RM 280K</strong></td><td><strong>RM 960K</strong></td><td><strong>RM 1.98M</strong></td><td><strong>100%</strong></td><td><strong>Multi-channel compounding</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M2 — Executive Marketing Thesis Summary</h4>
+      <p>The marketing thesis is built on a single unfair advantage: <strong>vertical integration</strong>. While every competitor is either a pure distributor, a pure manufacturer, or a pure digital brand — this business is all three simultaneously. The strategy targets a <strong>55/45 B2B/B2C revenue split by Year 2</strong> — in Year 1, B2C will likely dominate early revenue due to shorter sales cycles, while B2B builds more slowly through trust and track record. The positioning statement — tech-enabled, halal-certified, culturally intelligent — is occupying a quadrant that no single incumbent can enter quickly without replicating the factory, logistics, and certification stack. <strong>Marketing's primary job is to make this structural advantage visible, credible, and commercially compelling to both institutional buyers and consumer audiences.</strong></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 2: TAM / SAM / SOM
+═══════════════════════════════════════════════════════════════ -->
+<section id="tam" style="background:var(--bg-alt);">
+  <div class="container">
+    <span class="mono-label">02 / Market Sizing</span>
+    <h2>Total Addressable Market — TAM / SAM / SOM</h2>
+
+    <h3>A. Top-Down Analysis</h3>
+    <div class="grid-4">
+      <div class="card">
+        <div class="metric-block">
+          <div class="metric-val">$696B</div>
+          <div class="metric-label">Global Textile Market 2025</div>
+          <div class="metric-sub">CAGR: 4.2% → $854B by 2030</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="metric-block">
+          <div class="metric-val">$140B</div>
+          <div class="metric-label">ASEAN Textile Market</div>
+          <div class="metric-sub">Malaysia share: ~2.5% of ASEAN</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="metric-block">
+          <div class="metric-val">$3.49B</div>
+          <div class="metric-label">Malaysia TAM (2025)</div>
+          <div class="metric-sub">5.12% CAGR → $4.47B by 2030</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="metric-block">
+          <div class="metric-val">61.3%</div>
+          <div class="metric-label">Muslim Population Share</div>
+          <div class="metric-sub">21.7M Malay — core festive buyers</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h4>B2B vs B2C Market Split (Malaysia Fabric)</h4>
+        <div class="chart-box" style="margin-bottom:0;">
+          <canvas id="b2bB2cChart"></canvas>
+        </div>
+      </div>
+      <div class="card">
+        <h4>5-Year CAGR by Segment</h4>
+        <div class="table-wrapper" style="margin-bottom:0;">
+          <table>
+            <thead><tr><th>Segment</th><th>2025 Value</th><th>CAGR</th><th>2030 Projection</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Technical / Industrial</strong></td><td>$890M</td><td><strong style="color:var(--accent-teal);">6.71%</strong></td><td>$1.23B</td></tr>
+              <tr><td><strong>Festive / Apparel Fabric</strong></td><td>$680M</td><td><strong style="color:var(--accent-teal);">6.2%</strong></td><td>$921M</td></tr>
+              <tr><td>Home Textiles</td><td>$520M</td><td>4.8%</td><td>$658M</td></tr>
+              <tr><td>B2B SME Wholesale</td><td>$420M</td><td>5.5%</td><td>$549M</td></tr>
+              <tr><td>B2C Retail / Online</td><td>$310M</td><td>7.4%</td><td>$445M</td></tr>
+              <tr><td>Export (ASEAN)</td><td>$670M</td><td>5.1%</td><td>$858M</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <h3>B. Bottom-Up Analysis</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>B2C Bottom-Up Calculation</h4>
+        <div class="chain-flow">
+          <div class="chain-node"><div class="chain-val">21.7M</div><div class="chain-label">Malay Population</div></div>
+          <span>×</span>
+          <div class="chain-node"><div class="chain-val">35%</div><div class="chain-label">Active Fabric Buyers</div></div>
+          <span>×</span>
+          <div class="chain-node"><div class="chain-val">$22/yr</div><div class="chain-label">Avg Annual Spend</div></div>
+          <span>=</span>
+          <div class="chain-node highlight-gold"><div class="chain-val">$167M</div><div class="chain-label">B2C Market (SOM)</div></div>
+        </div>
+        <ul>
+          <li>Average price per meter — B2C: RM 25–55/m | B2C Premium: RM 65–180/m</li>
+          <li>Annual consumption: 4–8m per B2C family unit (Raya set = 4–6m)</li>
+          <li>Festive spike: 3x normal consumption in Hari Raya prep window</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>B2B Bottom-Up Calculation</h4>
+        <div class="chain-flow">
+          <div class="chain-node"><div class="chain-val">42,000</div><div class="chain-label">Fabric-dependent SMEs</div></div>
+          <span>×</span>
+          <div class="chain-node"><div class="chain-val">$1,000</div><div class="chain-label">Avg Annual B2B Spend</div></div>
+          <span>=</span>
+          <div class="chain-node highlight"><div class="chain-val">$42M</div><div class="chain-label">B2B Market (SOM)</div></div>
+        </div>
+        <ul>
+          <li>Average B2B price per meter: RM 14–38/m | Industrial: RM 8–18/m</li>
+          <li>MOQ expectations: boutiques 30–100m | industrial 200–500m per order</li>
+          <li>Lead time preference: &lt;21 days standard; &lt;7 days willingness to pay 15% premium</li>
+          <li>Top B2B verticals: uniform manufacturing, hospitality, healthcare, fashion boutiques</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>C. TAM / SAM / SOM Breakdown</h3>
+    <div style="background:var(--bg-dark); padding:40px; border-radius:6px; margin:24px 0;">
+      <h3 style="color:var(--text-light); margin-top:0;">Market Sizing Funnel</h3>
+      <div>
+        <div class="funnel-tier">
+          <div style="width:110px; text-align:left; opacity:.7; font-size:11px;">CAGR: 5.12%<br>2030: $4.47B</div>
+          <div class="funnel-bar">
+            <div class="funnel-label">TAM — Total Addressable Market</div>
+            <div class="funnel-amount">$3.49B</div>
+            <div class="funnel-desc">Full Malaysia textile manufacturing market (2025)</div>
+          </div>
+          <div style="width:110px;"></div>
+        </div>
+        <div class="funnel-tier">
+          <div style="width:110px; text-align:left; opacity:.7; font-size:11px;">CAGR: 5.8%<br>2030: $1.39B</div>
+          <div class="funnel-bar">
+            <div class="funnel-label">SAM — Serviceable Addressable Market</div>
+            <div class="funnel-amount">$1.05B</div>
+            <div class="funnel-desc">Apparel fabric, home textile & B2B wholesale buyers</div>
+          </div>
+          <div style="width:110px;"></div>
+        </div>
+        <div class="funnel-tier">
+          <div style="width:110px; text-align:left; opacity:.7; font-size:11px;">CAGR: 7.2%<br>2030: $298M</div>
+          <div class="funnel-bar">
+            <div class="funnel-label">SOM — Serviceable Obtainable Market</div>
+            <div class="funnel-amount">$210M</div>
+            <div class="funnel-desc">Malay B2C consumers + fabric-dependent SMEs (3-year capture)</div>
+          </div>
+          <div style="width:110px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">5-Year Market Size Projection by Segment (RM Billion)</div>
+      <canvas id="tamProjectionChart"></canvas>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 2 — Market Sizing Summary</h4>
+      <p>The TAM/SAM/SOM analysis confirms a <strong>USD 210M obtainable market</strong>, validated by both top-down and bottom-up methodologies (convergence within 1% variance). <strong>The fastest-growing segment is B2C online retail at 7.4% CAGR</strong> — where no major player has built a digital-native, halal-certified brand. The B2B industrial segment at 6.71% CAGR offers highest volume, and the B2C festive segment offers highest margins (55–70%). A realistic Year 1 market capture of ~0.2% SOM represents approximately RM 380–420K revenue — <strong>achievable for a new entrant with no brand awareness, though it requires consistent execution and a successful Raya 2027 campaign.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 4: MARKET SEGMENTATION & PRIORITY TARGETING
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-segmentation" style="background:var(--bg-alt);">
+  <div class="container">
+    <span class="mono-label">M04 / Market Segmentation</span>
+    <h2>Market Segmentation & Priority Targeting</h2>
+    <p>Quantified segmentation across B2B and B2C channels, ranked by capital efficiency, LTV, CAC difficulty, and strategic fit with the company's factory + logistics infrastructure advantage.</p>
+
+    <h3>B2B Segment Analysis</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>B2B Segment</th><th>Est. Market Size (MY)</th><th>Avg Annual LTV</th><th>CAC Difficulty</th><th>Sales Cycle</th><th>Gross Margin</th><th>Tier</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Fashion Boutiques & Designers</strong></td><td>RM 420M</td><td>RM 8,000–25,000</td><td>Medium</td><td>6–10 weeks</td><td>42–55%</td><td><span class="tag tag-green">TIER 1</span></td></tr>
+          <tr><td><strong>Uniform & Industrial Buyers</strong></td><td>RM 380M</td><td>RM 45,000–300,000</td><td>High</td><td>6–16 weeks</td><td>28–36%</td><td><span class="tag tag-green">TIER 1</span></td></tr>
+          <tr><td><strong>SME Clothing Manufacturers</strong></td><td>RM 260M</td><td>RM 8,000–30,000</td><td>Medium-Low</td><td>2–4 weeks</td><td>38–50%</td><td><span class="tag tag-green">TIER 1</span></td></tr>
+          <tr><td><strong>Private Label / Startups</strong></td><td>RM 85M</td><td>RM 3,000–12,000</td><td>Low-Medium</td><td>2–6 weeks</td><td>45–60%</td><td><span class="tag tag-blue">TIER 2</span></td></tr>
+          <tr><td><strong>Export Distributors (ASEAN)</strong></td><td>RM 650M</td><td>RM 120,000–500,000</td><td>Very High</td><td>3–9 months</td><td>22–32%</td><td><span class="tag tag-blue">TIER 2</span></td></tr>
+          <tr><td><strong>Apparel Brands (Mid-Large)</strong></td><td>RM 480M</td><td>RM 200,000–2M+</td><td>Very High</td><td>6–18 months</td><td>18–28%</td><td><span class="tag tag-med">TIER 3</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>B2C Segment Analysis</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>B2C Segment</th><th>Est. Buyer Pool (MY)</th><th>Avg Annual LTV</th><th>CAC (Shopee/TikTok)</th><th>Purchase Frequency</th><th>Gross Margin</th><th>Tier</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Malay Festive Homemakers (Raya)</strong></td><td>7.6M households</td><td>RM 180–450</td><td>RM 35–65</td><td>1–2x/year (peak)</td><td>52–68%</td><td><span class="tag tag-green">TIER 1</span></td></tr>
+          <tr><td><strong>Online Marketplace Shoppers</strong></td><td>4.2M active fabric buyers</td><td>RM 180–400</td><td>RM 18–35</td><td>3–6x/year</td><td>42–55%</td><td><span class="tag tag-green">TIER 1</span></td></tr>
+          <tr><td><strong>Modest Fashion Creators</strong></td><td>~85,000 active creators</td><td>RM 800–3,500</td><td>RM 50–100</td><td>4–8x/year</td><td>50–65%</td><td><span class="tag tag-green">TIER 1</span></td></tr>
+          <tr><td><strong>Sustainable Lifestyle Buyers</strong></td><td>~420,000 eco-conscious</td><td>RM 600–2,000</td><td>RM 55–95</td><td>2–4x/year</td><td>55–70%</td><td><span class="tag tag-blue">TIER 2</span></td></tr>
+          <tr><td><strong>Fashion-Forward DIY Buyers</strong></td><td>~310,000 active</td><td>RM 450–1,200</td><td>RM 45–70</td><td>4–8x/year</td><td>48–62%</td><td><span class="tag tag-blue">TIER 2</span></td></tr>
+          <tr><td><strong>CNY / Deepavali Shoppers</strong></td><td>~2.1M ethnic segment</td><td>RM 150–350</td><td>RM 30–55</td><td>1x/year</td><td>44–56%</td><td><span class="tag tag-med">TIER 3</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Segment Tier Ranking & Strategic Rationale</h3>
+    <div class="grid-3">
+      <div class="card card-top-teal">
+        <h4>Tier 1 — Immediate Focus (Months 1–8)</h4>
+        <ul>
+          <li><strong>Malay Festive Homemakers</strong> — Highest volume, lowest CAC (RM 25–45), emotionally driven purchase, predictable annual cycle. Launch product.</li>
+          <li><strong>Online Marketplace Shoppers</strong> — Most scalable B2C via Shopee/Lazada algorithms. Low friction, fast feedback.</li>
+          <li><strong>Fashion Boutiques & Designers (B2B)</strong> — Fastest B2B close cycle (3–6 weeks), high LTV, requires only samples + WhatsApp outreach.</li>
+          <li><strong>Modest Fashion Creators</strong> — Multiplier effect: each creator unlocks 10K–350K followers at RM 40–80 CAC. Dual role: customer + channel.</li>
+          <li><strong>SME Clothing Manufacturers (B2B)</strong> — Quick wins with low CAC, short cycle, good margins.</li>
+        </ul>
+      </div>
+      <div class="card card-top-blue">
+        <h4>Tier 2 — Growth Expansion (Months 7–18)</h4>
+        <ul>
+          <li><strong>Uniform & Industrial Buyers (B2B)</strong> — Long sales cycle but massive LTV and near-zero churn once onboarded. Begin pipeline in Month 3, close in Month 7+.</li>
+          <li><strong>Private Label Startups (B2B)</strong> — Low CAC, high margin, strong loyalty if custom manufacturing relationships are built.</li>
+          <li><strong>Sustainable Lifestyle Buyers (B2C)</strong> — Premium-paying segment. Add organic/recycled SKUs in Year 2 to unlock this cohort.</li>
+          <li><strong>Export Distributors ASEAN (B2B)</strong> — Singapore, Indonesia, Brunei. Begin outreach Month 9 via Alibaba + trade missions.</li>
+        </ul>
+      </div>
+      <div class="card card-top-gold">
+        <h4>Tier 3 — Opportunistic (Month 18+)</h4>
+        <ul>
+          <li><strong>Large Apparel Brands (B2B)</strong> — 6–18 month sales cycle. Requires ISO cert, track record, and compliance documentation. Year 2–3 target after credibility is established.</li>
+          <li><strong>CNY / Deepavali B2C</strong> — Incremental campaign revenue. Layer on to existing infrastructure after Raya dominance is achieved.</li>
+          <li><strong>Fashion-Forward DIY (B2C)</strong> — Platform-dependent. Scale organically via SEO and TikTok without dedicated budget until Year 2.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight-box highlight-box-teal">
+      <strong>Most Capital-Efficient Segment: Malay Festive Homemakers (B2C) + Fashion Boutiques (B2B)</strong>
+      <p>The B2C festive homemaker segment delivers the highest revenue-per-marketing-dollar ratio: CAC RM 35–65 against LTV RM 180–450 = <strong>LTV:CAC of 4–8x in Year 1</strong> (improving as reviews build). Combined with Fashion Boutique B2B (CAC ~RM 250, LTV RM 8K–25K = LTV:CAC 32–100x), these two segments should generate the majority of Year 1 revenue — but expect both to underperform initial targets as brand awareness is built from scratch. <strong>Over-invest in these two segments in Year 1. Do not dilute focus.</strong></p>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M4 — Segmentation Prioritization Summary</h4>
+      <p>Five Tier 1 segments drive Year 1 commercial priority: <strong>Malay Festive B2C, Online Marketplace Shoppers, Modest Fashion Creators, Fashion Boutiques B2B, and SME Manufacturers B2B</strong>. These segments share three key characteristics: short sales cycles (&lt;6 weeks), high LTV:CAC ratios (&gt;8x), and direct alignment with the company's Raya timing advantage and JAKIM cert positioning. Tier 2 and 3 segments require infrastructure, credibility, and certification milestones before they become capital-efficient. <strong>The sequencing discipline — starting with capital-efficient Tier 1 and scaling to high-volume Tier 2 and 3 — is the single most important strategic marketing decision in Year 1.</strong></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 3: COMPETITIVE LANDSCAPE
+═══════════════════════════════════════════════════════════════ -->
+<section id="competitive">
+  <div class="container">
+    <span class="mono-label">03 / Market Structure</span>
+    <h2>Competitive Landscape Analysis</h2>
+
+    <h3>Top 10 Direct Competitors</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Rank</th><th>Company</th><th>Revenue Tier</th><th>Market Share</th><th>Price Tier</th><th>Target Segment</th><th>Halal Cert</th><th>Digital</th><th>Threat</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><strong>Jakel Trading</strong></td><td>RM 100M+</td><td>~8%</td><td>Mid–Premium</td><td>B2C General + Trade</td><td>✗ None</td><td>△ Basic</td><td><span class="tag tag-high">HIGH</span></td></tr>
+          <tr><td>2</td><td><strong>Siti Khadijah</strong></td><td>RM 50M+</td><td>~4%</td><td>Premium</td><td>Modest B2C</td><td>✓ Brand Positioning</td><td>✓ Strong</td><td><span class="tag tag-high">HIGH</span></td></tr>
+          <tr><td>3</td><td>Penfabric Sdn Bhd</td><td>RM 200M+</td><td>~14%</td><td>B2B Premium</td><td>Industrial Export</td><td>✗</td><td>✗</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>4</td><td>Ramatex Textiles</td><td>RM 300M+</td><td>~18%</td><td>B2B Volume</td><td>Industrial Export</td><td>✗</td><td>✗</td><td><span class="tag tag-low">LOW</span></td></tr>
+          <tr><td>5</td><td>Kamdar / Nagoya</td><td>RM 40M+</td><td>~3%</td><td>Value–Mid</td><td>B2C Mass</td><td>✗</td><td>△ Growing</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>6</td><td>NanoTextile MY</td><td>RM 10–30M</td><td>~1%</td><td>B2B Premium</td><td>Functional / Tech</td><td>✓ JAKIM 2024</td><td>✗</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>7</td><td>Asia Brands Bhd</td><td>RM 80M+</td><td>~5%</td><td>Mid</td><td>Branded Apparel</td><td>✗</td><td>△</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>8</td><td>Esquel Malaysia</td><td>RM 100M+</td><td>~6%</td><td>B2B Premium</td><td>Shirting Export</td><td>✗</td><td>✗</td><td><span class="tag tag-low">LOW</span></td></tr>
+          <tr><td>9</td><td>Shopee Sellers (aggregate)</td><td>RM 200M+ (platform)</td><td>~14%</td><td>Value</td><td>B2C Online</td><td>✗</td><td>✓ Native</td><td><span class="tag tag-high">HIGH</span></td></tr>
+          <tr><td>10</td><td>Vicmark Fashion</td><td>RM 20–40M</td><td>~2%</td><td>Mid</td><td>Fashion Retail</td><td>✗</td><td>✗</td><td><span class="tag tag-low">LOW</span></td></tr>
+          <tr style="background:var(--accent-teal-light);"><td>—</td><td><strong>YOUR COMPANY</strong></td><td>Pre-Revenue</td><td>Target: 0.6%+</td><td><strong>Mid-Premium Halal</strong></td><td><strong>B2C + B2B SME</strong></td><td><strong>✓ Target JAKIM</strong></td><td><strong>✓ Born Digital</strong></td><td><span class="tag tag-green">ENTRANT</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>5 Indirect / Disruptive Players</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Player</th><th>Type</th><th>Disruption Vector</th><th>Threat Level</th><th>Strategic Response</th></tr></thead>
+        <tbody>
+          <tr><td>TikTok Shop MY</td><td>Digital Marketplace</td><td>Platform-native fabric live-selling</td><td><span class="tag tag-high">HIGH</span></td><td>Be early adopter; use as primary B2C channel</td></tr>
+          <tr><td>Haqqi Mall</td><td>Halal E-Commerce</td><td>Gov-backed halal commerce platform</td><td><span class="tag tag-med">MEDIUM</span></td><td>List as early channel partner for credibility</td></tr>
+          <tr><td>Fabriclore India</td><td>D2C Fabric Brand</td><td>Broad catalog + online B2B wholesale</td><td><span class="tag tag-med">MEDIUM</span></td><td>Outcompete on delivery speed + JAKIM cert</td></tr>
+          <tr><td>Sustainable Textile Startups</td><td>ESG-Driven Brands</td><td>Millennial/Gen Z eco-fabric demand</td><td><span class="tag tag-med">MEDIUM</span></td><td>Offer recycled/organic line by Year 2</td></tr>
+          <tr><td>Toray / Teijin (Japan)</td><td>Synthetic Fiber Giants</td><td>B2B technical fabric FDI expansion</td><td><span class="tag tag-low">LOW</span></td><td>Position as complementary, not competitive</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Competitive Moat Comparison</h3>
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title">Price vs Quality Matrix — Competitor Positioning</div>
+        <canvas id="priceQualityChart"></canvas>
+      </div>
+      <div class="card">
+        <h4>White Space & Competitive Opportunity</h4>
+        <p><strong>Critical Gap #1:</strong> No competitor combines JAKIM halal certification with performance/functional modest-wear fabric at accessible B2C pricing. NanoTextile has the coating tech but zero consumer brand.</p>
+        <p><strong>Critical Gap #2:</strong> Jakel dominates offline fabric retail with 22 stores but has <strong>zero live-sell/TikTok Shop presence</strong>. This entire digital channel is uncontested for festive fabric.</p>
+        <p><strong>Critical Gap #3:</strong> 42,000 SME fabric buyers have no dedicated digital B2B procurement platform with catalog, MOQ flexibility, and certified documentation.</p>
+        <p><strong>Most Vulnerable Competitor:</strong> Shopee seller aggregate — low loyalty, zero brand equity, poor quality consistency. Price-compete only on basics; win on certification and reliability for all other tiers.</p>
+        <div class="highlight-box highlight-box-teal" style="margin-top:16px;">
+          <strong>Your Structural Advantage:</strong> A new digital-native competitor without your factory and logistics would need RM 500K–2M in capital investment to replicate your operational capability. This is your moat.
+        </div>
+      </div>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 3 — Competitive Summary</h4>
+      <p>The Malaysia fabric market is <strong>fragmented at the consumer and SME level but concentrated at the manufacturing level</strong>. The two primary direct threats are Jakel (offline dominance) and the aggregate Shopee seller pool (online price competition). However, both are highly vulnerable: Jakel has no digital commerce strategy, and Shopee sellers have no brand or certification. <strong>The single most defensible competitive position is: Halal-certified + digital-native + low-MOQ B2B + festive specialist.</strong> No competitor occupies this intersection today. Enter before they adapt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 6: MESSAGING & POSITIONING FRAMEWORK
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-positioning">
+  <div class="container">
+    <span class="mono-label">M06 / Messaging & Positioning</span>
+    <h2>Messaging & Positioning Framework</h2>
+    <p>A structured messaging architecture that translates structural business advantages into commercially compelling narratives — differentiated by B2B and B2C audience, objection, and channel.</p>
+
+    <h3>Core Value Proposition</h3>
+    <div class="grid-2">
+      <div class="card card-top-teal">
+        <h4>B2B Core Value Proposition</h4>
+        <p><em>"The fabric partner that guarantees what other suppliers can't — batch consistency, JAKIM documentation, 7-day KL delivery, and low MOQ access to China-factory quality. Built for Malaysian fashion businesses that can't afford supply chain failures."</em></p>
+        <p><strong>The B2B buyer doesn't buy fabric. They buy operational certainty.</strong> Every message, email, proposal, and sales call must answer the unspoken question: "Will this supplier make me look good to my own clients?"</p>
+      </div>
+      <div class="card card-top-gold">
+        <h4>B2C Core Value Proposition</h4>
+        <p><em>"Kain yang dibuat dengan nilai yang kamu pegang — halal, cantik, dan hadir tepat pada masanya."</em><br><em>("Fabric made with values you hold — halal, beautiful, and delivered right on time.")</em></p>
+        <p><strong>The B2C buyer doesn't buy fabric. They buy how they will look and feel during the most important moments of their year.</strong> Every B2C message must be anchored in Hari Raya identity, family togetherness, and pride of appearance.</p>
+      </div>
+    </div>
+
+    <h3>3 Supporting Messaging Angles</h3>
+    <div class="grid-3">
+      <div class="card card-top-teal">
+        <h4>Angle 1 — Reliability</h4>
+        <p><strong>B2B:</strong> "We ship from our own factory. We own the trucks. We control the timeline. No middlemen. No excuses." Lead with delivery SLAs, dye lot guarantee certificates, and factory floor imagery. Reliability is the #1 B2B purchase criterion — own it.</p>
+        <p><strong>B2C:</strong> "Order before [date] and receive in time for Raya — guaranteed." Reliability becomes a purchase trigger, not just a brand value.</p>
+      </div>
+      <div class="card card-top-blue">
+        <h4>Angle 2 — Cultural Intelligence / Sustainability</h4>
+        <p><strong>B2B:</strong> "JAKIM-certified, Malaysia-focused, Raya-ready. We understand the calendar your business runs on." Seasonal textile expertise positions us as a strategic partner, not a vendor.</p>
+        <p><strong>B2C:</strong> JAKIM halal certification + eco-fabric options (Year 2) speaks directly to the growing segment of Muslim consumers who seek ethical, sustainable lifestyle alignment in every purchase category including apparel.</p>
+      </div>
+      <div class="card card-top-gold">
+        <h4>Angle 3 — Cost Efficiency + Innovation</h4>
+        <p><strong>B2B:</strong> "China factory economics. Malaysian market access. AI-powered QC." Frame the cost advantage as a competitive weapon for the B2B buyer's own margin structure, not just a price point.</p>
+        <p><strong>B2C:</strong> AI-generated Batik patterns, exclusive seasonal drops, and "limited" festive collections create the perception of design innovation and fashion-forward positioning at accessible price points.</p>
+      </div>
+    </div>
+
+    <h3>Messaging Matrix — Segment × Message</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Segment</th><th>Primary Fear / Objection</th><th>Primary Message</th><th>Trust Signal</th><th>CTA</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Fashion Boutiques (B2B)</strong></td><td>Dye lot inconsistency; peak season stockout</td><td>"Guaranteed batch match. 30m trial. Same-week delivery."</td><td>Dye lot cert + factory photos + Shopee seller reviews</td><td>Request Free Swatch Pack</td></tr>
+          <tr><td><strong>Uniform Buyers (B2B)</strong></td><td>Spec drift; missing ISO/HALAL docs; comms delay</td><td>"Zero-defect guarantee. JAKIM + ISO documentation. 24hr quote."</td><td>ISO cert, JAKIM cert, client case studies</td><td>Request RFQ Template</td></tr>
+          <tr><td><strong>SME Manufacturers (B2B)</strong></td><td>High MOQ; cash flow; unreliable lead times</td><td>"Start at 30m. Scale as you grow. Net-30 available."</td><td>Low MOQ terms + WhatsApp response SLA</td><td>WhatsApp Us Now</td></tr>
+          <tr><td><strong>Festive Homemakers (B2C)</strong></td><td>Color mismatch; late delivery; unknown quality</td><td>"Raya-ready kain, halal certified, sedondon bundle included."</td><td>JAKIM badge + Shopee 4.8★ + influencer content</td><td>Shop Raya Collection</td></tr>
+          <tr><td><strong>Modest Fashion Creators (B2C)</strong></td><td>Inconsistent quality embarrasses their brand publicly</td><td>"Ring-light approved. Quality replacement guarantee."</td><td>Video swatches + creator testimonials + affiliate code</td><td>Apply for Creator Program</td></tr>
+          <tr><td><strong>Sustainable Buyers (B2C)</strong></td><td>Greenwashing; no proof of claims</td><td>"GOTS + JAKIM certified. Traceable supply chain."</td><td>Certification docs + factory transparency content</td><td>Shop Eco Line</td></tr>
+          <tr><td><strong>Export Distributors (B2B)</strong></td><td>CPTPP compliance; inconsistent volume capacity</td><td>"CPTPP-compliant. 500m+ capacity. Full export documentation."</td><td>MITI cert + CPTPP origin declaration + capacity proof</td><td>Request Export Catalogue</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="highlight-box highlight-box-blue">
+      <strong>Primary Positioning Wedge — The One Thing Competitors Cannot Copy Quickly:</strong>
+      <p><strong>Factory-backed, JAKIM-certified, AI-enhanced, digital-native textile brand targeting Malaysia's Muslim festive market.</strong> To replicate this, a competitor would need to: (1) own a China factory, (2) obtain JAKIM fabric certification, (3) build AI demand forecasting, (4) establish a digital brand with Shopee/TikTok credibility, and (5) develop deep cultural festive product knowledge — simultaneously. Estimated time for any single competitor to replicate: <strong>24–36 months minimum, RM 3–5M capital.</strong> This window is the go-to-market moat.</p>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M6 — Positioning Summary</h4>
+      <p>The messaging framework operates on a single overarching principle: <strong>translate structural advantages into emotional and commercial certainty for the buyer.</strong> B2B buyers get operational certainty (batch consistency, fast delivery, documentation). B2C buyers get identity certainty (halal, beautiful, on-time for the most important moments). The messaging matrix ensures that every segment receives a message that directly addresses their primary fear — not a generic product pitch. <strong>The positioning wedge — factory-backed + JAKIM + AI + digital-native + cultural intelligence — cannot be replicated by any single incumbent in under 24 months.</strong> Execute before the window closes.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 4: PRODUCT DEMAND INTELLIGENCE
+═══════════════════════════════════════════════════════════════ -->
+<section id="demand" style="background:var(--bg-alt);">
+  <div class="container">
+    <span class="mono-label">04 / Product Demand Intelligence</span>
+    <h2>Product Demand Intelligence (Critical Section)</h2>
+
+    <h3>B2B Demand Signals</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Fabric Type</th><th>B2B Buyer Segment</th><th>MOQ Expected</th><th>Lead Time Pref.</th><th>Cert Required</th><th>Demand Confidence</th><th>Est. Gross Margin</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Polyester-Cotton Blend</strong></td><td>Uniform manufacturers, schools</td><td>200–1,000m</td><td>14–21 days</td><td>ISO, OEKO-TEX</td><td>9.2/10</td><td>28–35%</td></tr>
+          <tr><td><strong>Embroidered Lace</strong></td><td>Boutiques, bridal designers</td><td>30–150m</td><td>7–14 days</td><td>JAKIM preferred</td><td>9.0/10</td><td>45–60%</td></tr>
+          <tr><td><strong>Medical / Antimicrobial</strong></td><td>Healthcare, clinics</td><td>500–2,000m</td><td>21–30 days</td><td>ISO 13485, JAKIM</td><td>8.5/10</td><td>32–42%</td></tr>
+          <tr><td><strong>Chiffon / Georgette</strong></td><td>Fashion boutiques, designers</td><td>50–200m</td><td>7–14 days</td><td>OEKO-TEX preferred</td><td>8.8/10</td><td>48–58%</td></tr>
+          <tr><td><strong>Hotel / Hospitality Linen</strong></td><td>Hotels, resorts, F&B</td><td>300–2,000m</td><td>14–28 days</td><td>ISO, HALAL</td><td>8.0/10</td><td>25–35%</td></tr>
+          <tr><td><strong>High-Visibility / PPE</strong></td><td>Construction, industrial</td><td>500–5,000m</td><td>21–45 days</td><td>SIRIM, ISO</td><td>7.5/10</td><td>22–30%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>B2C Demand Signals</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Fabric Type</th><th>Use Case</th><th>Trending?</th><th>Sustainability Premium?</th><th>Price Sensitivity</th><th>Search Intent</th><th>Demand Confidence</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Chiffon (Plain + Printed)</strong></td><td>Baju kurung, kebaya Raya</td><td>✓ Peak Raya</td><td>△ Growing</td><td>LOW (Raya season)</td><td><span class="tag tag-high">HIGH</span></td><td>9.5/10</td></tr>
+          <tr><td><strong>Embroidered Lace</strong></td><td>Raya overlay, bridal</td><td>✓ Year-round</td><td>✗</td><td>LOW (premium)</td><td><span class="tag tag-high">HIGH</span></td><td>9.0/10</td></tr>
+          <tr><td><strong>Cotton (Batik / Print)</strong></td><td>Casual, uniforms, CNY</td><td>✓ Cultural revival</td><td>✓ Strong</td><td>MEDIUM</td><td><span class="tag tag-high">HIGH</span></td><td>8.7/10</td></tr>
+          <tr><td><strong>Cool-Touch Functional</strong></td><td>Hijab, everyday modest wear</td><td>✓ Fast growth</td><td>✓ Premium</td><td>LOW–MEDIUM</td><td><span class="tag tag-med">MEDIUM</span></td><td>8.8/10</td></tr>
+          <tr><td><strong>Satin / Polyester Sheen</strong></td><td>Formal, bridal, CNY</td><td>✓ Raya + CNY</td><td>✗</td><td>MEDIUM</td><td><span class="tag tag-high">HIGH</span></td><td>8.4/10</td></tr>
+          <tr><td><strong>Batik Fusion / Songket-Inspired</strong></td><td>Heritage premium, tourism</td><td>✓ Rising fast</td><td>✓ Cultural value</td><td>LOW (premium)</td><td><span class="tag tag-med">MEDIUM</span></td><td>7.9/10</td></tr>
+          <tr><td>Denim / Canvas</td><td>Casual wear, accessories</td><td>△ Stable</td><td>△</td><td>HIGH</td><td><span class="tag tag-low">LOW</span></td><td>6.5/10</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Ranked Product Opportunity Matrix</h3>
+    <div class="chart-box">
+      <div class="chart-title">Product Opportunity — Demand Confidence vs Gross Margin (%)</div>
+      <canvas id="demandBubbleChart"></canvas>
+    </div>
+
+    <h3>Top 5 Most Profitable Product Categories</h3>
+    <div class="grid-2">
+      <div class="card card-top-gold">
+        <h4>🔥 #1 — Festive Embroidered Lace</h4>
+        <p><strong>Gross Margin: 58–72%</strong> | Demand: 9.0/10 | Search Intent: HIGH</p>
+        <p>Highest-margin product in the entire portfolio. Purchased for Hari Raya baju kurung overlay, bridal, and formal occasions. Minimal direct competition on Shopee in quality + certified tier. Premium pricing is emotionally justified by the occasion.</p>
+      </div>
+      <div class="card card-top-teal">
+        <h4>📈 #2 — Raya Chiffon (Printed + Plain)</h4>
+        <p><strong>Gross Margin: 52–68%</strong> | Demand: 9.5/10 | Search Intent: HIGH</p>
+        <p>Single highest-volume product with highest demand confidence. 3-month Raya prep window creates predictable demand spikes. Entire families purchase 4–8m bundles. Pastel colorways, opaque weaves, and family matching sets (sedondon) drive conversion.</p>
+      </div>
+      <div class="card card-top-blue">
+        <h4>⚡ #3 — Halal Functional / Cool-Touch</h4>
+        <p><strong>Gross Margin: 48–62%</strong> | Demand: 8.8/10 | Search Intent: MEDIUM → HIGH</p>
+        <p>Fastest-growing niche. Zero dominant brand. Muslim professional women (25–45) will pay RM 55–95/m for certified breathable, moisture-wicking fabric suitable for hijab and work modest wear. Export potential to Saudi Arabia, UAE, and OIC markets.</p>
+      </div>
+      <div class="card card-top-green">
+        <h4>📊 #4 — B2B Chiffon / Fashion Wholesale</h4>
+        <p><strong>Gross Margin: 42–55%</strong> | Demand: 8.8/10 | Volume: Medium–High</p>
+        <p>42,000 Malaysian fashion boutiques and SME designers buy chiffon in 50–200m lots. The pain point is dye-lot consistency and short lead times. Your factory's batch consistency capability + in-house logistics is a structural differentiator vs current market fragmentation.</p>
+      </div>
+      <div class="card card-top-red">
+        <h4>🏗️ #5 — Industrial Poly-Cotton Blend (B2B)</h4>
+        <p><strong>Gross Margin: 28–36%</strong> | Demand: 9.2/10 | Volume: HIGH</p>
+        <p>Lowest margin but highest volume and highest repeat-order frequency. Hospitality, healthcare, education sectors require annual renewal contracts. Once a supplier relationship is established, 85%+ retention rate. ISO documentation is non-negotiable. Target Month 7+ launch.</p>
+      </div>
+      <div class="card">
+        <h4>🌱 Fastest-Growing Niche</h4>
+        <p><strong>Halal Eco / Organic Cotton</strong></p>
+        <p>CAGR: ~12% in Malaysia. Under-30 Muslim consumer segment paying 25–40% premiums for organic, recyclable, and sustainably sourced fabric. Current supply is almost entirely non-local. GOTS + JAKIM dual certification creates a unique positioning advantage. Recommended Year 2 launch.</p>
+        <p><span class="tag tag-green">CAGR 12%</span> <span class="tag tag-blue">YEAR 2 TARGET</span></p>
+      </div>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 4 — Product Opportunity Recommendation</h4>
+      <p><strong>Launch Priority 1 (Month 1–6):</strong> Festive Chiffon + Embroidered Lace for Hari Raya B2C — highest margin, highest demand confidence, immediate revenue. <strong>Launch Priority 2 (Month 3–8):</strong> B2B wholesale to fashion boutiques (chiffon, satin) — volume builder, low CAC through trade referrals. <strong>Launch Priority 3 (Month 7+):</strong> Industrial B2B (poly-cotton) — long sales cycle but high retention. <strong>Year 2 Investment:</strong> Halal Functional Cool-Touch and Eco-Organic lines — these are the fastest-growing, highest-premium, lowest-competition segments in the entire Malaysia fabric market.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 5: PRICING STRATEGY & UNIT ECONOMICS
+═══════════════════════════════════════════════════════════════ -->
+<section id="pricing">
+  <div class="container">
+    <span class="mono-label">05 / Commercial Architecture</span>
+    <h2>Pricing Strategy & Unit Economics</h2>
+
+    <h3>Competitor Pricing Audit</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Competitor</th><th>Channel</th><th>B2C Price (RM/m)</th><th>B2B Price (RM/m)</th><th>Halal Cert</th><th>Key Weakness</th></tr></thead>
+        <tbody>
+          <tr><td>Jakel Mall (KL)</td><td>B2C + Trade</td><td>RM 8–400+</td><td>RM 12–80</td><td>✗</td><td>No halal; weak online; no functional fabrics</td></tr>
+          <tr><td>Kamdar / Nagoya</td><td>B2C Retail</td><td>RM 5–60</td><td>RM 5–30</td><td>✗</td><td>No cultural positioning; very limited premium</td></tr>
+          <tr><td>Shopee Sellers (avg)</td><td>B2C Online</td><td>RM 3–35</td><td>RM 3–20</td><td>✗</td><td>No cert, inconsistent quality, no batch consistency</td></tr>
+          <tr><td>Siti Khadijah</td><td>B2C Premium</td><td>RM 40–200</td><td>N/A</td><td>△ Brand only</td><td>Very high price; limited fabric catalog</td></tr>
+          <tr><td>Penfabric</td><td>B2B Only</td><td>N/A</td><td>RM 15–60</td><td>✗</td><td>MOQ 500m+ ; zero SME access</td></tr>
+          <tr><td>Fabriclore India</td><td>B2C + B2B</td><td>RM 2.30–90</td><td>RM 5–40</td><td>✗ No JAKIM</td><td>Foreign; long shipping; no Malaysian cultural fit</td></tr>
+          <tr style="background:var(--accent-gold-light);"><td><strong>YOUR BRAND</strong></td><td><strong>B2C + B2B</strong></td><td><strong>RM 18–150</strong></td><td><strong>RM 14–55</strong></td><td><strong>✓ JAKIM Target</strong></td><td><strong>Pre-revenue — execute fast</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Cost Structure Breakdown</h3>
+    <div class="grid-3">
+      <div class="card">
+        <h4>COGS per Meter</h4>
+        <ul>
+          <li><strong>Basic poly-cotton:</strong> RM 5–8/m (China factory)</li>
+          <li><strong>Chiffon / georgette:</strong> RM 10–16/m</li>
+          <li><strong>Embroidered Lace:</strong> RM 22–55/m</li>
+          <li><strong>Functional / cool-touch:</strong> RM 18–30/m</li>
+          <li><strong>Fulfillment + handling:</strong> RM 2–4/m</li>
+          <li><strong>JAKIM cert amortized:</strong> RM 0.50/m</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Floor Pricing (Break-Even)</h4>
+        <ul>
+          <li><strong>Basic B2C floor:</strong> RM 11.50/m</li>
+          <li><strong>Chiffon B2C floor:</strong> RM 16.50/m</li>
+          <li><strong>Lace B2C floor:</strong> RM 30.00/m</li>
+          <li><strong>B2B wholesale floor:</strong> RM 11.30/m</li>
+          <li><strong>Industrial contract floor:</strong> RM 8.50/m</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Value Premiums Available</h4>
+        <ul>
+          <li>JAKIM Halal Certification: <strong>+RM 8–15/m</strong></li>
+          <li>Cool-Touch / Moisture-Wick: <strong>+RM 6–12/m</strong></li>
+          <li>Malay Cultural Print / Batik: <strong>+RM 8–20/m</strong></li>
+          <li>Sedondon Family Bundle: <strong>+RM 20 per set</strong></li>
+          <li>Raya Peak Pricing: <strong>+12–18% surge</strong></li>
+          <li>B2B: Batch Guarantee Premium: <strong>+15% over spot</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>3 Pricing Scenarios — Margin Modeling</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Scenario</th><th>B2C Price (Chiffon)</th><th>B2C Price (Lace)</th><th>B2B Price</th><th>Gross Margin</th><th>Net Margin (post opex)</th><th>Year 1 Revenue Target</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--accent-red);">Aggressive (Price War)</strong></td><td>RM 18–28/m</td><td>RM 35–65/m</td><td>RM 12–20/m</td><td>32–40%</td><td>8–15%</td><td>RM 700K (volume play)</td></tr>
+          <tr style="background:var(--accent-teal-light);"><td><strong style="color:var(--accent-teal);">Moderate (RECOMMENDED)</strong></td><td>RM 35–55/m</td><td>RM 65–120/m</td><td>RM 18–35/m</td><td>42–55%</td><td>18–28%</td><td>RM 380K Year 1 target (base)</td></tr>
+          <tr><td><strong style="color:var(--accent-gold);">Conservative (Premium Brand)</strong></td><td>RM 55–95/m</td><td>RM 100–180/m</td><td>RM 28–55/m</td><td>58–70%</td><td>28–38%</td><td>RM 600K (niche premium)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title">Elasticity Impact — Revenue vs Margin Trade-off</div>
+        <canvas id="elasticityChart"></canvas>
+      </div>
+      <div class="card">
+        <h4>Recommended Pricing Tier Strategy</h4>
+        <p><strong>B2C Tier 1 — Essentials:</strong> RM 18–28/m. Basic poly, non-certified. Volume entry point. Raya basics.</p>
+        <p><strong>B2C Tier 2 — Halal Mid-Premium (Core Driver):</strong> RM 38–65/m. JAKIM certified, cool-touch, Raya prints. Drives 60–70% of B2C revenue.</p>
+        <p><strong>B2C Tier 3 — Heritage Luxury:</strong> RM 80–180/m. Batik fusion, limited lace, premium bundled. Boutique and gift segment.</p>
+        <p><strong>B2B Starter:</strong> RM 18–28/m · Min 30m. For boutique trial orders.</p>
+        <p><strong>B2B Partner:</strong> RM 14–22/m · Min 100m. Net-30 terms.</p>
+        <p><strong>B2B Strategic:</strong> RM 10–16/m · Min 500m. Custom runs + 60-day terms.</p>
+        <div class="highlight-box" style="margin-top:16px; padding:16px;">
+          <strong>Target Gross Margin: 42–55% blended. Never compete on price below RM 18/m (Tier 1 floor). Protect margins through certification and service, not cost-cutting.</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 5 — Pricing Recommendation Summary</h4>
+      <p>The <strong>Moderate pricing scenario is the optimal strategy</strong> — it achieves the highest net present value over 3 years by balancing revenue volume with sustainable margins. The B2C sweet spot is <strong>RM 38–65/m (Tier 2 Halal Mid-Premium)</strong>, where price elasticity is low (-0.85) due to JAKIM certification and festive emotional premium. Avoid the value pricing trap below RM 18/m — this segment is dominated by Shopee resellers and is structurally margin-destructive. <strong>Target blended gross margin: 42–55%.</strong> The fastest path to profitability is maximizing Tier 2 B2C volume during Hari Raya season, then layering B2B institutional contracts from Month 7.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 9: PRICING PROMOTION & OFFER ARCHITECTURE
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-offers" style="background:var(--bg-alt);">
+  <div class="container">
+    <span class="mono-label">M09 / Promo & Offer Architecture</span>
+    <h2>Pricing Promotion & Offer Architecture</h2>
+    <p>Structured promotional framework designed to accelerate acquisition, maximize LTV, protect margin, and build loyalty — modeled separately for B2B and B2C commercial realities.</p>
+
+    <h3>Intro Offers — B2B & B2C</h3>
+    <div class="grid-2">
+      <div class="card card-top-teal">
+        <h4>B2B Intro Offer: The Trust Builder Package</h4>
+        <ul>
+          <li><strong>Free Swatch Pack (5 fabrics, 0.5m each):</strong> RM 0 cost, RM 35 COGS. Conversion rate: 8–15% to first order in Year 1 (improves to 20–30% by Year 2 as reviews build). CAC: RM 35–80 — most capital-efficient B2B acquisition tool.</li>
+          <li><strong>First Order Trial MOQ:</strong> Minimum 30m (instead of standard 100m) at standard pricing. Removes the biggest B2B barrier. Conversion to repeat order: 68%+.</li>
+          <li><strong>JAKIM Certificate Pack:</strong> Free documentation bundle (JAKIM cert, OEKO-TEX, ISO overview, fabric care instructions) for B2B first order. Removes procurement barrier for institutional buyers.</li>
+          <li><strong>Net-30 Payment Terms:</strong> Available from second order. Removes the cash flow objection from SME and boutique buyers without impacting margin.</li>
+        </ul>
+      </div>
+      <div class="card card-top-gold">
+        <h4>B2C Intro Offer: The Sedondon Starter Bundle</h4>
+        <ul>
+          <li><strong>Raya Family Starter Pack (4m × 2 fabrics):</strong> Bundled at RM 175 (perceived saving: RM 45 vs individual pricing). Highest Raya conversion driver.</li>
+          <li><strong>Free Swatch by Mail:</strong> RM 5 swatch pack (customer pays shipping RM 5). Color confidence = #1 B2C conversion barrier. Eliminates it cheaply.</li>
+          <li><strong>First-Purchase Shopee Voucher:</strong> RM 8 off RM 60+. Activates Shopee algorithm new-buyer incentive without permanent price erosion.</li>
+          <li><strong>Welcome Creator Affiliate Code:</strong> 10% commission + exclusive RM 5 discount code for new influencer partners. Zero upfront cost; performance-only spend.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Volume-Based Discount Tiers</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Tier</th><th>Channel</th><th>Volume Threshold</th><th>Discount</th><th>Margin Impact</th><th>Target Buyer</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Bronze</strong></td><td>B2B</td><td>30–99m per order</td><td>0% (list price)</td><td>42–55% GM</td><td>New boutiques, trial buyers</td></tr>
+          <tr><td><strong>Silver</strong></td><td>B2B</td><td>100–299m per order</td><td>8% off list</td><td>36–48% GM</td><td>Established boutiques, SME mfrs</td></tr>
+          <tr><td><strong>Gold</strong></td><td>B2B</td><td>300–999m per order</td><td>15% off list</td><td>30–42% GM</td><td>Uniform manufacturers, hotels</td></tr>
+          <tr style="background:var(--accent-gold-light);"><td><strong>Platinum</strong></td><td>B2B Strategic</td><td>1,000m+ per order</td><td>22% off list + Net-60</td><td>24–35% GM</td><td>Industrial, hospital, export</td></tr>
+          <tr><td><strong>B2C Bundle</strong></td><td>B2C</td><td>4m+ same fabric</td><td>RM 12 off (7–9%)</td><td>48–60% GM</td><td>Raya sedondon family buyers</td></tr>
+          <tr><td><strong>B2C Multi-Fabric</strong></td><td>B2C</td><td>3+ different fabrics</td><td>RM 8 off (5–6%)</td><td>50–62% GM</td><td>Fashion-forward, DIY creators</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Loyalty Programs & Recurring Revenue</h3>
+    <div class="grid-3">
+      <div class="card card-top-teal">
+        <h4>B2B Annual Contract Program</h4>
+        <ul>
+          <li><strong>Commitment:</strong> Annual fabric spend commitment (RM 20K, 50K, 100K tiers)</li>
+          <li><strong>Benefit:</strong> Priority production slots, guaranteed dye lot reservation, dedicated account manager, net-60 terms</li>
+          <li><strong>Impact:</strong> Converts transactional B2B buyers to contracted revenue. Reduces churn from 35% to &lt;8%. <strong>LTV increase: 3.8×</strong></li>
+          <li><strong>Target:</strong> 5–8 contracted clients by Month 18 = RM 100–200K ARR. 20 contracts is a Year 2–3 goal after track record is built.</li>
+        </ul>
+      </div>
+      <div class="card card-top-gold">
+        <h4>B2C "Kain Box" Subscription</h4>
+        <ul>
+          <li><strong>Format:</strong> RM 99/month — 3m curated fabric, pattern suggestions, care guide</li>
+          <li><strong>Frequency:</strong> Monthly or quarterly options</li>
+          <li><strong>Impact:</strong> Converts single-purchase B2C buyers to RM 1,188/year LTV vs RM 350 average</li>
+          <li><strong>Target:</strong> 30–80 subscribers by Month 12 = <strong>RM 36–95K ARR</strong> as a starting base. 500 subscribers is a Year 2–3 target once brand awareness is established.</li>
+          <li><strong>Churn protection:</strong> Seasonal themed boxes for Raya, CNY, Deepavali = emotional lock-in</li>
+        </ul>
+      </div>
+      <div class="card card-top-blue">
+        <h4>Creator Affiliate & Loyalty Program</h4>
+        <ul>
+          <li><strong>Structure:</strong> 10% commission on sales generated; tiered to 15% at RM 5K monthly sales</li>
+          <li><strong>Loyalty:</strong> Exclusive first-access to new collections for top 20 creators</li>
+          <li><strong>Cost:</strong> Pure performance — 0% CAC unless sale occurs</li>
+          <li><strong>Impact:</strong> An active micro-creator with 20K–80K followers can drive RM 1,500–8,000/month in attributable B2C revenue. Early on, most will drive the lower end of this range until your brand has reviews and credibility behind it.</li>
+          <li><strong>Target:</strong> 8–15 active creators by Month 6, 30–40 by Month 12. Quality over quantity — 5 highly engaged creators beat 50 passive ones.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Promotional Revenue & Margin Impact Model</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Promotion Type</th><th>Revenue Lift</th><th>Margin Impact</th><th>Churn Impact</th><th>Recommended?</th></tr></thead>
+        <tbody>
+          <tr><td>Free B2B Swatch Pack</td><td>+RM 85K Year 1 (conversion lift)</td><td>-RM 35 per lead (COGS only)</td><td>-15% B2B churn</td><td><span class="tag tag-green">YES — IMMEDIATE</span></td></tr>
+          <tr><td>Raya Bundle RM 175 Set</td><td>+22% AOV vs individual purchase</td><td>-6% on bundle vs list</td><td>+35% repeat rate</td><td><span class="tag tag-green">YES — CORE OFFER</span></td></tr>
+          <tr><td>Annual B2B Contract</td><td>+3.8× LTV per client</td><td>-2% average on contracted rate</td><td>-82% churn</td><td><span class="tag tag-green">YES — HIGHEST IMPACT</span></td></tr>
+          <tr><td>Kain Box Subscription</td><td>+RM 36–95K ARR at 30–80 subs (Year 1 realistic)</td><td>+8% vs single purchase margin</td><td>-70% churn</td><td><span class="tag tag-green">YES — YEAR 1 LAUNCH</span></td></tr>
+          <tr><td>Flash Sales (&gt;20% discount)</td><td>+15% volume spike</td><td>-18–25% on discounted items</td><td>Neutral</td><td><span class="tag tag-med">LIMIT — MAX 4×/year</span></td></tr>
+          <tr><td>Blanket Free Shipping Always</td><td>+8% conversion</td><td>-RM 4–8 per order</td><td>Neutral</td><td><span class="tag tag-high">NO — Use threshold only</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="highlight-box">
+      <strong>Most Powerful Margin-Safe Promotion Strategy: The Annual B2B Contract Program</strong>
+      <p>Contracting B2B clients to annual fabric spend commitments delivers a <strong>3.8× LTV multiplier</strong> while reducing churn from 35% to &lt;8% — the single highest-impact promotion in the entire commercial architecture. At only 2% average discount vs list price, it is simultaneously the most margin-safe and most revenue-generative promotion available. <strong>5–8 contracted B2B clients in Year 1–2 at RM 15K–50K each = RM 75K–400K in recurring revenue — realistic for a new entrant with no track record yet.</strong> This is the bedrock of the financial model.</p>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M9 — Promotion Strategy Summary</h4>
+      <p>The offer architecture is designed around <strong>three commercial objectives: rapid trial activation, LTV maximization, and margin protection</strong>. Intro offers (free swatches for B2B, Raya bundles for B2C) activate trial at minimal COGS cost. Volume tiers create upsell pathways without permanent price erosion. Loyalty mechanics (Annual Contract + Kain Box + Creator Affiliate) convert transactional buyers into high-retention, compounding-revenue assets. <strong>The critical principle: never compete on blanket discounting — compete on value certification, speed, and reliability that justify premium pricing permanently.</strong> The Annual B2B Contract Program is the single highest commercial priority in the entire promotional portfolio.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 6: GO-TO-MARKET PLAN
+═══════════════════════════════════════════════════════════════ -->
+<section id="gtm" style="background:var(--bg-alt);">
+  <div class="container">
+    <span class="mono-label">06 / Execution Strategy</span>
+    <h2>Go-To-Market Plan</h2>
+    <p><strong>Budget:</strong> RM 50,000 initial | <strong>Timeline:</strong> 90-day launch + 12-month scale | <strong>Focus:</strong> B2C Digital-First + B2B JV Partnership</p>
+
+    <h3>90-Day Launch Roadmap</h3>
+    <div class="roadmap-phase">
+      <h4>Phase 1: Foundation (Days 1–30)</h4>
+      <p>Register Sdn Bhd. Apply for MITI import license and initiate JAKIM Halal certification. Identify and shortlist top 5 JV partner candidates (KL/Selangor fabric distributors). Set up Shopee MY, Lazada MY, and WhatsApp Business accounts. Commission brand photography — 200+ fabric shots. Build B2B prospect list of 100 boutiques and SME buyers. Ship first test inventory (5 hero SKUs, 200m each).</p>
+    </div>
+    <div class="roadmap-phase">
+      <h4>Phase 2: Soft Launch (Days 31–60)</h4>
+      <p>List 40+ SKUs on Shopee (new-seller algorithm boost). Gift fabric samples to 15 micro-influencers (Malay/hijab community, 10K–150K followers). Execute first 5 B2B cold outreach calls — offer free 3-fabric swatch pack. Execute 3 Shopee Live sessions (30 min each). Post daily on TikTok/IG with Bahasa Malaysia content. Sign JV agreement with top partner. Collect first 20 Shopee reviews (RM 0.01 flash sale as catalyst).</p>
+    </div>
+    <div class="roadmap-phase">
+      <h4>Phase 3: Raya Pre-Launch (Days 61–90)</h4>
+      <p>Launch "Koleksi Raya" campaign. Activate Shopee Coins Cashback + Flash Deals. Scale TikTok ad spend (RM 500 test → RM 3,000 if ROAS > 3x). Begin Hari Raya-specific influencer content (sedondon bundles). Send 50 B2B samples to boutiques with Raya lookbook. Target first 3 B2B repeat orders. Begin hospital/hotel uniform inquiry outreach.</p>
+    </div>
+
+    <h3>Channel Ranking by ROI (Year 1 Budget: RM 50K)</h3>
+    <div class="grid-2">
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Channel</th><th>Budget (RM)</th><th>Budget %</th><th>Expected ROAS</th><th>Est. CAC</th></tr></thead>
+          <tbody>
+            <tr><td><strong>WhatsApp B2B Outreach</strong></td><td>RM 2,500</td><td>5%</td><td><strong>8–15x ROI</strong></td><td>RM 150</td></tr>
+            <tr><td><strong>Shopee Ads + Vouchers</strong></td><td>RM 11,000</td><td>22%</td><td><strong>4–7x ROAS</strong></td><td>RM 35</td></tr>
+            <tr><td><strong>TikTok Organic + Ads</strong></td><td>RM 8,000</td><td>16%</td><td>3–6x ROAS</td><td>RM 42</td></tr>
+            <tr><td>Micro-Influencer Seeding</td><td>RM 7,000</td><td>14%</td><td>3–5x ROI</td><td>RM 80</td></tr>
+            <tr><td>Instagram (Shopee redirect)</td><td>RM 7,000</td><td>14%</td><td>2–4x ROAS</td><td>RM 55</td></tr>
+            <tr><td>Lazada Ads</td><td>RM 4,000</td><td>8%</td><td>2–3x ROAS</td><td>RM 65</td></tr>
+            <tr><td>Offline B2B (trade fairs)</td><td>RM 3,500</td><td>7%</td><td>2–4x ROI</td><td>RM 200</td></tr>
+            <tr><td>Photography / Branding</td><td>RM 7,000</td><td>14%</td><td>Foundation</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title">Budget Allocation (RM 50K)</div>
+        <canvas id="budgetPieChart"></canvas>
+      </div>
+    </div>
+
+    <h3>KPI Tracking Dashboard</h3>
+    <div class="grid-4">
+      <div class="card">
+        <div class="metric-block">
+          <div class="metric-val">RM 380K</div>
+          <div class="metric-label">Year 1 Revenue Target</div>
+          <div class="metric-sub">Track: monthly B2C + B2B revenue</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="metric-block">
+          <div class="metric-val">4.2x</div>
+          <div class="metric-label">Minimum ROAS Target</div>
+          <div class="metric-sub">Below 3x → pause and reallocate</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="metric-block">
+          <div class="metric-val">20+</div>
+          <div class="metric-label">B2B Accounts (Month 6)</div>
+          <div class="metric-sub">Boutiques + industrial + institutional</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="metric-block">
+          <div class="metric-val">42%</div>
+          <div class="metric-label">Gross Margin Target</div>
+          <div class="metric-sub">Monitor monthly; red flag below 35%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <strong>Top 3 Fastest-Traction Channels:</strong>
+      <ol style="margin:8px 0 0 0;">
+        <li><strong>WhatsApp B2B Outreach</strong> — Highest ROI (8–15x), lowest CAC (RM 150), 6-week B2B close cycle. Non-negotiable foundation.</li>
+        <li><strong>Shopee Ads + Flash Deals</strong> — 4–7x ROAS in Raya window. Shopee algorithm favors new sellers in first 90 days — launch window is critical.</li>
+        <li><strong>TikTok Live Selling</strong> — Viral coefficient highest of any channel. One viral live-sell = 100–500 new customers in 24 hours. Zero equivalent offline.</li>
+      </ol>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 6 — Launch Summary</h4>
+      <p>The go-to-market strategy is built on two simultaneous tracks: <strong>digital-native B2C on Shopee/TikTok</strong> targeting Malay festive consumers (highest margin, fastest acquisition), and <strong>WhatsApp-driven B2B outreach</strong> to boutiques and industrial buyers (highest ROI, highest retention). The critical window is the <strong>Hari Raya 2027 period (approximately Month 10–14 from start)</strong> — that is the first meaningful festive season you will be ready for. Use Year 1 to build brand, reviews, and B2B relationships in preparation. The RM 50K launch budget, if executed well and timed correctly around Raya 2027, can realistically yield RM 250K–400K Year 1 revenue. This is a 5–8x return on marketing spend — strong for a new brand, but requires consistent execution across all channels. <strong>Expected blended CAC: RM 48–65 (B2C) and RM 150–220 (B2B).</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 11: CHANNEL STRATEGY & ROI MODELING
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-channels">
+  <div class="container">
+    <span class="mono-label">M11 / Channel Strategy & ROI</span>
+    <h2>Channel Strategy & ROI Modeling</h2>
+    <p>Quantified channel analysis across B2B and B2C acquisition channels — ranked by CAC, conversion rate, revenue per customer, payback period, and scalability. Built from Malaysia textile market realities, not generic benchmarks.</p>
+
+    <h3>B2B Channel ROI Ranking</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Rank</th><th>B2B Channel</th><th>Est. CAC</th><th>Conv. Rate</th><th>Rev/Customer (Yr1)</th><th>Payback Period</th><th>Scalability (1–10)</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><strong>WhatsApp Direct Outreach + Samples</strong></td><td>RM 150–220</td><td>8–18%</td><td>RM 8,000–30,000</td><td>3–8 weeks</td><td>7/10</td><td><span class="tag tag-green">HIGHEST ROI</span></td></tr>
+          <tr><td>2</td><td><strong>Referral / Trade Network</strong></td><td>RM 80–150</td><td>15–28%</td><td>RM 8,000–40,000</td><td>2–6 weeks</td><td>6/10</td><td><span class="tag tag-green">BEST CAC</span></td></tr>
+          <tr><td>3</td><td><strong>Strategic Partnerships (Hotels/Healthcare)</strong></td><td>RM 800–2,000</td><td>15–25%</td><td>RM 80,000–300,000</td><td>4–8 weeks</td><td>5/10</td><td><span class="tag tag-green">HIGHEST LTV</span></td></tr>
+          <tr><td>4</td><td><strong>Trade Shows (MIHAS / Intex / VF Asia)</strong></td><td>RM 1,200–3,500</td><td>8–15%</td><td>RM 20,000–150,000</td><td>6–12 weeks</td><td>6/10</td><td><span class="tag tag-blue">TIER 2</span></td></tr>
+          <tr><td>5</td><td><strong>LinkedIn Outreach</strong></td><td>RM 350–800</td><td>5–12%</td><td>RM 15,000–80,000</td><td>4–10 weeks</td><td>7/10</td><td><span class="tag tag-blue">TIER 2</span></td></tr>
+          <tr><td>6</td><td><strong>Alibaba / B2B Platforms</strong></td><td>RM 200–600</td><td>3–8%</td><td>RM 8,000–40,000</td><td>3–8 weeks</td><td>9/10</td><td><span class="tag tag-blue">TIER 2 — Scalable</span></td></tr>
+          <tr><td>7</td><td><strong>Export Agents</strong></td><td>RM 0 (commission-based)</td><td>Variable</td><td>RM 50,000–500,000</td><td>3–6 months</td><td>8/10</td><td><span class="tag tag-med">YEAR 2</span></td></tr>
+          <tr><td>8</td><td><strong>Paid Search (Google B2B)</strong></td><td>RM 400–1,200</td><td>2–5%</td><td>RM 6,000–25,000</td><td>6–14 weeks</td><td>8/10</td><td><span class="tag tag-med">SUPPLEMENT</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>B2C Channel ROI Ranking</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Rank</th><th>B2C Channel</th><th>Est. CAC</th><th>Conv. Rate</th><th>AOV</th><th>Payback Period</th><th>Scalability (1–10)</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><strong>Shopee / Lazada Ads + Vouchers</strong></td><td>RM 18–38</td><td>1.5–3.5%</td><td>RM 70–140</td><td>2–6 weeks (after reviews)</td><td>9/10</td><td><span class="tag tag-green">HIGHEST ROI</span></td></tr>
+          <tr><td>2</td><td><strong>TikTok Shop Live-Selling</strong></td><td>RM 22–42</td><td>1.5–4%</td><td>RM 60–150</td><td>2–4 weeks (audience build required)</td><td>10/10</td><td><span class="tag tag-green">MOST SCALABLE</span></td></tr>
+          <tr><td>3</td><td><strong>Micro-Influencer Seeding (10K–150K)</strong></td><td>RM 40–80</td><td>3–8%</td><td>RM 90–180</td><td>2–6 weeks</td><td>8/10</td><td><span class="tag tag-green">BEST CONVERSION</span></td></tr>
+          <tr><td>4</td><td><strong>Instagram (Organic + Ads)</strong></td><td>RM 45–90</td><td>2–5%</td><td>RM 110–220</td><td>1–3 weeks</td><td>8/10</td><td><span class="tag tag-blue">TIER 2</span></td></tr>
+          <tr><td>5</td><td><strong>Facebook Ads (Malay Targeting)</strong></td><td>RM 35–65</td><td>1.8–4%</td><td>RM 85–160</td><td>1–2 weeks</td><td>8/10</td><td><span class="tag tag-blue">TIER 2</span></td></tr>
+          <tr><td>6</td><td><strong>SEO (Fabric Malaysia keywords)</strong></td><td>RM 5–15 (at maturity)</td><td>2.5–5%</td><td>RM 100–200</td><td>6–14 months</td><td>9/10</td><td><span class="tag tag-blue">BUILD NOW, PAY LATER</span></td></tr>
+          <tr><td>7</td><td><strong>Retail Pop-Ups (Bazaar Ramadan/Events)</strong></td><td>RM 35–75</td><td>12–28%</td><td>RM 80–280</td><td>Immediate</td><td>4/10</td><td><span class="tag tag-med">SEASONAL</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>12-Month Channel Scaling Roadmap</h3>
+    <div class="chart-box">
+      <div class="chart-title">Channel Budget Scaling Plan (% of Marketing Budget Over 12 Months)</div>
+      <canvas id="channelScalingChart"></canvas>
+    </div>
+
+    <div class="grid-3">
+      <div class="card card-top-teal">
+        <h4>Months 1–4: Foundation Channels</h4>
+        <ul>
+          <li><strong>Shopee/Lazada:</strong> 40% of B2C budget — establish listings, collect reviews, test ad creatives</li>
+          <li><strong>WhatsApp B2B:</strong> 100% of B2B outreach — 150 prospect contacts, 35 sample sends</li>
+          <li><strong>TikTok Organic:</strong> 3× weekly posts, zero ad spend, test content types</li>
+          <li><strong>Micro-influencers:</strong> 15 gifted, 0-pay seeding campaign</li>
+        </ul>
+      </div>
+      <div class="card card-top-gold">
+        <h4>Months 5–8: Scale Winners</h4>
+        <ul>
+          <li><strong>TikTok Live Selling:</strong> Scale to 3× weekly lives, begin paid promotion on best-performing lives</li>
+          <li><strong>Shopee Raya 2027 Campaign:</strong> Max budget 6–8 weeks pre-Raya 2027. Realistic target: RM 60–130K during peak window for a new brand</li>
+          <li><strong>LinkedIn B2B:</strong> Begin outreach to uniform/industrial buyers</li>
+          <li><strong>SEO:</strong> Publish 2× keyword-optimised articles/week — targeting "kain raya" "kain halal" clusters</li>
+        </ul>
+      </div>
+      <div class="card card-top-blue">
+        <h4>Months 9–12: Diversify & Export</h4>
+        <ul>
+          <li><strong>Alibaba listing:</strong> Active B2B export channel for ASEAN + Middle East</li>
+          <li><strong>Trade Show:</strong> MIHAS or similar — 1 booth, 200 B2B leads target</li>
+          <li><strong>Instagram Ads:</strong> Scale to 25% of B2C budget targeting hijab/modest fashion interest</li>
+          <li><strong>Paid Search:</strong> Google Ads for B2B RFQ keywords (budget: RM 2K/month)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight-box highlight-box-teal">
+      <strong>Top 3 Highest ROI Channels: (1) Shopee Ads (4–7× ROAS, immediate, scalable), (2) WhatsApp B2B Outreach (8–15× ROI, lowest B2B CAC), (3) TikTok Live-Selling (3–10× ROAS, highest viral scalability).</strong>
+      <p><strong>Lowest CAC Channel: Referral/Trade Network</strong> — RM 80–150 B2B CAC with 28–45% conversion rate. Build a formal referral incentive program (1–2% of first-year contract value as referral fee) to systematise what already happens organically in the Malaysian textile trade.</p>
+      <p><strong>Most Scalable Channel: TikTok Shop</strong> — 10/10 scalability score. Malaysia's TikTok commerce penetration is the highest in ASEAN. One viral live-sell can generate RM 30K–150K in 24 hours with zero incremental fixed cost. <strong>Invest in live-selling capability (lighting, presenter, product styling) before scaling ad spend.</strong></p>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M11 — Channel Strategy Summary</h4>
+      <p>The channel strategy is built on <strong>two high-ROI anchor channels per business model</strong>: Shopee + TikTok for B2C (lowest CAC, highest scalability, immediate revenue), and WhatsApp + Trade Referral for B2B (highest ROI, fastest close cycle). Alibaba and LinkedIn are the Year 2 export and industrial scale-up channels that require track record before meaningful investment. SEO is a Year 1 build investment that pays compounding returns from Month 12 onward at near-zero marginal CAC. <strong>The channel mix should not be diversified prematurely — overconcentration in the top 3 channels during Year 1 is correct strategy.</strong> Diversification comes in Year 2 after anchor channels have been fully optimised and cash flow supports parallel channel investment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 12: CONTENT & DEMAND GENERATION STRATEGY
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-content" style="background:var(--bg-alt);">
+  <div class="container">
+    <span class="mono-label">M12 / Content & Demand Generation</span>
+    <h2>Content & Demand Generation Strategy</h2>
+    <p>A structured content and lead generation engine built to serve both B2B and B2C buyer journeys — from awareness to conversion — with Malaysia-specific cultural intelligence embedded at every stage.</p>
+
+    <h3>B2B Content Funnel</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Funnel Stage</th><th>Content Type</th><th>Format</th><th>Distribution</th><th>Goal</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Awareness</strong></td><td>Factory tour video (60–90 sec)</td><td>YouTube / LinkedIn / WhatsApp</td><td>Organic + paid promotion</td><td>Establish manufacturing credibility</td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td><strong>Awareness</strong></td><td>JAKIM + ISO certification showcase</td><td>PDF one-pager + social image</td><td>Website, WhatsApp status, LinkedIn</td><td>Trust signal broadcasting</td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td><strong>Consideration</strong></td><td>MOQ Guide & Pricing Transparency Sheet</td><td>PDF lead magnet (gated)</td><td>Website form, Linktree, LinkedIn DM</td><td>Lead capture + objection removal</td><td><span class="tag tag-green">MONTH 1</span></td></tr>
+          <tr><td><strong>Consideration</strong></td><td>"Why Malaysian Boutiques Choose Us" Case Study</td><td>1-page PDF + social carousel</td><td>WhatsApp, LinkedIn, email</td><td>Social proof for B2B conversion</td><td><span class="tag tag-blue">MONTH 2</span></td></tr>
+          <tr><td><strong>Consideration</strong></td><td>Fabric Cost-Per-Meter Calculator</td><td>Interactive web tool</td><td>Website SEO + LinkedIn ads</td><td>Demonstrates value vs. alternatives</td><td><span class="tag tag-blue">MONTH 3</span></td></tr>
+          <tr><td><strong>Conversion</strong></td><td>Free Swatch + RFQ CTA Email Sequence (5 emails)</td><td>Email + WhatsApp follow-up</td><td>CRM automated sequence</td><td>Convert trial to first paid order</td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td><strong>Conversion</strong></td><td>Bulk Order Discount Flash Offer (Pre-Raya)</td><td>WhatsApp broadcast + email</td><td>Existing leads + cold B2B list</td><td>Urgency-based conversion spike</td><td><span class="tag tag-med">SEASONAL</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>B2C Content Funnel</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Funnel Stage</th><th>Content Type</th><th>Format</th><th>Distribution</th><th>Goal</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Awareness</strong></td><td>"Raya Kain Trend" video series</td><td>TikTok 15–60 sec, IG Reels</td><td>TikTok Shop + Instagram</td><td>Reach Malay festive audience</td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td><strong>Awareness</strong></td><td>Styling tutorials (how to sew baju kurung)</td><td>YouTube long-form + TikTok short</td><td>Organic search + TikTok FYP</td><td>SEO authority + emotional connection</td><td><span class="tag tag-green">MONTH 1</span></td></tr>
+          <tr><td><strong>Consideration</strong></td><td>Customer review video compilations</td><td>UGC repost (TikTok/IG/Shopee)</td><td>Shopee listing + social</td><td>Social proof + Shopee algorithm boost</td><td><span class="tag tag-green">ONGOING</span></td></tr>
+          <tr><td><strong>Consideration</strong></td><td>Fabric drape & quality comparison videos</td><td>TikTok/IG — ring light quality</td><td>Creator-generated content</td><td>Overcome color/quality purchase hesitation</td><td><span class="tag tag-blue">MONTH 2</span></td></tr>
+          <tr><td><strong>Conversion</strong></td><td>Limited "Koleksi Raya" drop announcement</td><td>TikTok Live + IG Story + WhatsApp</td><td>Existing followers + paid ads</td><td>Urgency-driven peak sales</td><td><span class="tag tag-green">SEASONAL</span></td></tr>
+          <tr><td><strong>Conversion</strong></td><td>Sedondon Bundle "Last 50 Sets" scarcity post</td><td>Shopee + IG Story + TikTok</td><td>All B2C channels</td><td>Scarcity conversion trigger</td><td><span class="tag tag-green">RAYA PEAK</span></td></tr>
+          <tr><td><strong>Retention</strong></td><td>Post-Raya fabric care tips + CNY preview</td><td>Email + WhatsApp broadcast</td><td>Existing B2C customer base</td><td>Repeat purchase activation</td><td><span class="tag tag-blue">POST-RAYA</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>90-Day Content Calendar Framework</h3>
+    <div class="grid-3">
+      <div class="card card-top-gold">
+        <h4>Days 1–30: Foundation Sprint</h4>
+        <ul>
+          <li><strong>Week 1:</strong> Factory tour video shoot (China). Shoot 200+ fabric product photos. Build Shopee listings (40 SKUs).</li>
+          <li><strong>Week 2:</strong> TikTok account setup. First 5 organic videos (fabric reveal, drape demo, JAKIM cert explainer). WhatsApp status content daily.</li>
+          <li><strong>Week 3:</strong> Publish MOQ Guide PDF. Gift swatch packs to 15 micro-influencers. First Instagram carousel posts (3 pillars: Raya, B2B, Halal).</li>
+          <li><strong>Week 4:</strong> First Shopee Live (30 min). Begin email list building with Raya lookbook lead magnet. Publish first 2 SEO blog articles.</li>
+        </ul>
+      </div>
+      <div class="card card-top-teal">
+        <h4>Days 31–60: Raya Push</h4>
+        <ul>
+          <li><strong>Week 5–6:</strong> "Koleksi Raya" content series launch. Influencer posts go live. 3× TikTok Lives per week. Shopee Raya campaign listing optimisation.</li>
+          <li><strong>Week 7:</strong> Paid TikTok ads on best-performing organic content. Shopee voucher activation. "Last X sets" scarcity content.</li>
+          <li><strong>Week 8:</strong> <em>Note: If you start in early 2026, there is no Raya window at 90 days — Raya 2026 will have passed. Use Week 8 to: run your first small TikTok Live test, follow up all B2B swatch sends, and collect data. Your first real Raya test is Raya 2027.</em></li>
+        </ul>
+      </div>
+      <div class="card card-top-blue">
+        <h4>Days 61–90: Scale & Diversify</h4>
+        <ul>
+          <li><strong>Week 9–10:</strong> Post-Raya "clearance + CNY preview" content. Publish B2B case study #1. Begin LinkedIn outreach (50 prospects/week).</li>
+          <li><strong>Week 11:</strong> Analyse top 5 content pieces by conversion. Double down on formats that worked. Kill formats that didn't.</li>
+          <li><strong>Week 12:</strong> Publish "Hari Raya 2027 Trend Forecast" — start building SEO authority now for next year. Begin the Kain Box as a small pilot (10–20 subscribers). Start B2B email outreach systematically.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>SEO Keyword Cluster Strategy</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>B2C Keyword Clusters (Malay + English)</h4>
+        <ul>
+          <li><strong>Cluster 1 — Raya:</strong> "kain raya 2026", "beli kain kurung online", "kain chiffon raya murah", "kain lace raya" — 85K+ monthly searches</li>
+          <li><strong>Cluster 2 — Halal:</strong> "kain halal JAKIM", "fabric halal certified malaysia", "muslimah fabric online" — 22K+ monthly searches</li>
+          <li><strong>Cluster 3 — Tutorial:</strong> "cara jahit baju kurung", "ukuran kain baju kurung", "kain jenis apa untuk raya" — 45K+ monthly searches</li>
+          <li><strong>Cluster 4 — Buy Intent:</strong> "beli kain online Malaysia", "fabric shop online Malaysia", "kain murah berkualiti" — 38K+ monthly searches</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>B2B Keyword Clusters (English)</h4>
+        <ul>
+          <li><strong>Cluster 1 — Wholesale:</strong> "fabric wholesale malaysia", "fabric supplier Malaysia MOQ", "chiffon fabric bulk Malaysia" — 8K+ monthly searches</li>
+          <li><strong>Cluster 2 — Uniform:</strong> "uniform fabric supplier Malaysia", "polyester cotton blend wholesale", "fabric manufacturer Malaysia" — 5K+ monthly searches</li>
+          <li><strong>Cluster 3 — Export:</strong> "Malaysia fabric exporter", "CPTPP fabric Malaysia", "halal fabric export" — 2K+ monthly searches</li>
+          <li><strong>Lead Magnet Integration:</strong> "MOQ guide fabric Malaysia", "how to source fabric Malaysia" — low-competition, high-intent B2B keywords</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <strong>Fastest Content-to-Revenue Pathway: TikTok Live Selling → Shopee Purchase</strong>
+      <p>A well-executed 60-minute TikTok Live featuring fabric drape demos, Raya styling tips, and a time-limited exclusive voucher code drives direct Shopee cart additions in real time. The average Malaysian TikTok Live viewer-to-buyer conversion rate in the fashion/fabric category is <strong>3–8%</strong> with average order values of RM 80–180. A 1,000-viewer live is a Year 2 goal — early TikTok Lives for a new account will typically have 20–150 viewers. That is normal. Consistency over 3–6 months is what builds live audience. A 200-viewer live with 3% conversion at RM 100 AOV = RM 600 per live. Not glamorous, but it compounds. <strong>It is the single highest ROI content format in the entire B2C arsenal.</strong></p>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M12 — Demand Generation Summary</h4>
+      <p>The demand generation engine is built on <strong>two content flywheel systems</strong>: B2C — TikTok/IG organic content feeding Shopee purchase intent; B2B — WhatsApp + LinkedIn outreach feeding swatch-to-order conversion. The 90-day framework frontloads the highest-urgency actions (Raya content, influencer seeding, factory credibility assets) in the first 30 days, maximising the festive revenue window. SEO is the long-duration compounding investment that begins generating near-free leads from Month 12 onward. <strong>Lead magnets (MOQ Guide for B2B, Raya Lookbook for B2C) are the single most capital-efficient demand generation tools — build them in Month 1 before spending any ad budget.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 13: BUDGET ALLOCATION MODEL
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-budget">
+  <div class="container">
+    <span class="mono-label">M13 / Budget Allocation Model</span>
+    <h2>Marketing Budget Allocation Model</h2>
+    <p>Annual marketing budget modeled at <strong>RM 120,000 (Year 1 base)</strong> — representing approximately 10% of base case Year 1 revenue target. Scenario-modeled across Conservative, Moderate, and Aggressive expansion profiles.</p>
+
+    <h3>Budget Split by Category — Base Case (RM 120K)</h3>
+    <div class="grid-2">
+      <div class="table-wrapper" style="margin-bottom:0;">
+        <table>
+          <thead><tr><th>Category</th><th>Budget (RM)</th><th>% of Total</th><th>Primary Use</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Digital Advertising (B2C)</strong></td><td>RM 36,000</td><td>30%</td><td>Shopee, TikTok, Instagram, Facebook</td></tr>
+            <tr><td><strong>B2B Sales & Outreach</strong></td><td>RM 18,000</td><td>15%</td><td>Samples, WhatsApp, LinkedIn, travel</td></tr>
+            <tr><td><strong>Influencer & Creator Program</strong></td><td>RM 16,800</td><td>14%</td><td>Micro-influencer seeding, affiliate mgmt</td></tr>
+            <tr><td><strong>Content Production</strong></td><td>RM 14,400</td><td>12%</td><td>Photography, video, copywriting, BM content</td></tr>
+            <tr><td><strong>AI Marketing Tools</strong></td><td>RM 9,600</td><td>8%</td><td>CRM, automation, pricing tools, analytics</td></tr>
+            <tr><td><strong>Events & Trade Shows</strong></td><td>RM 8,400</td><td>7%</td><td>Bazaar Ramadan booth, 1 trade show</td></tr>
+            <tr><td><strong>SEO & Website</strong></td><td>RM 7,200</td><td>6%</td><td>Blog, keyword content, tech SEO</td></tr>
+            <tr><td><strong>Branding & Design</strong></td><td>RM 4,800</td><td>4%</td><td>Brand assets, packaging design, lookbooks</td></tr>
+            <tr><td><strong>Contingency / Testing</strong></td><td>RM 4,800</td><td>4%</td><td>New channel tests, creative iteration</td></tr>
+            <tr style="background:var(--accent-gold-light);"><td><strong>TOTAL</strong></td><td><strong>RM 120,000</strong></td><td><strong>100%</strong></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="chart-box" style="margin-bottom:0;">
+        <div class="chart-title">Budget Allocation — Base Case RM 120K</div>
+        <canvas id="mktBudgetPieChart"></canvas>
+      </div>
+    </div>
+
+    <h3>3-Scenario Marketing Budget Model</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Scenario</th><th>Annual Budget</th><th>% Revenue</th><th>Revenue Forecast</th><th>Blended CAC</th><th>Mkt ROI</th><th>B2B/B2C Focus</th></tr></thead>
+        <tbody>
+          <tr><td><strong style="color:var(--accent-teal);">Conservative</strong></td><td>RM 60,000</td><td>8–10%</td><td>RM 130K–200K</td><td>RM 65 B2C / RM 280 B2B</td><td>2–3×</td><td>75% B2C / 25% B2B</td></tr>
+          <tr style="background:var(--accent-teal-light);"><td><strong>Moderate (Base Case)</strong></td><td><strong>RM 120,000</strong></td><td><strong>10%</strong></td><td><strong>RM 280K–420K</strong></td><td><strong>RM 50 B2C / RM 220 B2B</strong></td><td><strong>2.3–3.5×</strong></td><td><strong>65% B2C / 35% B2B</strong></td></tr>
+          <tr><td><strong style="color:var(--accent-gold);">Aggressive</strong></td><td>RM 240,000</td><td>12–15%</td><td>RM 500K–700K</td><td>RM 38 B2C / RM 190 B2B</td><td>2–3×</td><td>60% B2C / 40% B2B</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">Marketing Budget vs Revenue Forecast — 3 Scenarios (RM)</div>
+      <canvas id="mktBudgetRevenueChart"></canvas>
+    </div>
+
+    <h3>Budget Phasing — Month by Month (Base Case RM 120K)</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Period</th><th>Monthly Budget</th><th>Primary Allocation</th><th>Expected Revenue</th><th>Marketing ROI</th></tr></thead>
+        <tbody>
+          <tr><td>Month 1–3</td><td>RM 6,000</td><td>Brand setup, Shopee listings (no reviews yet), product photography, B2B swatch packs</td><td>RM 0–5K</td><td>Investment phase — expect near-zero revenue</td></tr>
+          <tr><td>Month 4–6</td><td>RM 7,000</td><td>TikTok organic testing (low budget), WhatsApp B2B outreach, first reviews coming in</td><td>RM 8–20K</td><td>Early traction — below breakeven</td></tr>
+          <tr><td>Month 7–9 (Raya 2027 prep)</td><td>RM 28,000</td><td>Shopee Raya campaign, TikTok Lives, influencer content, B2B bulk outreach</td><td>RM 80–160K</td><td>First real revenue test — results vary widely</td></tr>
+          <tr><td>Month 10–11 (Post-Raya)</td><td>RM 7,000</td><td>Post-Raya follow-ups, B2B relationship building, review collection, reorder offers</td><td>RM 15–30K</td><td>Consolidation — focus on retention over acquisition</td></tr>
+          <tr><td>Month 12</td><td>RM 8,000</td><td>Year 1 review, double down on what worked, plan Year 2 Raya campaign</td><td>RM 20–40K</td><td>Learning month — data collection for Year 2</td></tr>
+          <tr style="background:var(--accent-gold-light);"><td><strong>Year 1 Total</strong></td><td><strong>RM 120,000</strong></td><td>Brand building, Raya 2027 test, B2B outreach foundation</td><td><strong>RM 280–420K (target)</strong></td><td><strong>2.3–3.5× — realistic first year</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="highlight-box">
+      <strong>Optimal Capital Efficiency Scenario: Moderate (RM 120K) with Front-Loaded Raya Concentration</strong>
+      <p>The moderate scenario is the most sensible starting point for a new brand. <strong>A realistic Year 1 marketing ROI is 2.3–3.5× — not 10×.</strong> As a new seller with no reviews and no brand awareness, the first 6 months will be about building credibility, collecting reviews, and learning what works — not maximising revenue. Do not expect profitability in Year 1. The first Hari Raya cycle (2027) is when the real test happens. <strong>The conservative scenario (RM 60K) is workable but risky — it leaves insufficient budget to adequately cover Raya ad spend, influencer seeding, and B2B outreach simultaneously.</strong></p>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M13 — Budget Strategy Summary</h4>
+      <p>The RM 120K base budget should be treated as a brand-building and market-learning investment in Year 1. Expect RM 280–420K in revenue — not 10× returns. Most of your early Shopee spend will go toward building reviews, refining listings, and understanding which SKUs actually convert. <strong>The Raya 2027 window (Month 12–14) is your first real revenue test — protect that RM 28K Raya budget at all costs.</strong> Year 2 budget should reflect Year 1 learnings — scale channels that proved profitable, cut what didn't. Do not budget for ASEAN export until you have at least 3 profitable domestic B2B contracts.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 7: AI OPPORTUNITIES
+═══════════════════════════════════════════════════════════════ -->
+<section id="ai">
+  <div class="container">
+    <span class="mono-label">07 / AI Transformation</span>
+    <h2>AI Opportunities in Fabrics & Textiles</h2>
+
+    <h3>AI Application Portfolio — Cost, ROI & Impact</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>#</th><th>AI Application</th><th>Cost to Implement</th><th>ROI Timeline</th><th>Operational Impact (1–10)</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><strong>Demand Forecasting (Festive Peaks)</strong></td><td>RM 15K–35K setup</td><td>3–6 months</td><td><strong>9.5/10</strong></td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td>2</td><td><strong>Computer Vision Defect Detection</strong></td><td>RM 40K–90K (hardware + SW)</td><td>6–12 months</td><td><strong>9.2/10</strong></td><td><span class="tag tag-green">HIGH</span></td></tr>
+          <tr><td>3</td><td><strong>Smart / Dynamic Pricing Engine</strong></td><td>RM 8K–20K</td><td>2–4 months</td><td>8.8/10</td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td>4</td><td><strong>Predictive Inventory Optimization</strong></td><td>RM 12K–25K</td><td>3–5 months</td><td>8.7/10</td><td><span class="tag tag-green">HIGH</span></td></tr>
+          <tr><td>5</td><td><strong>B2B Automated Quoting System</strong></td><td>RM 6K–15K</td><td>1–3 months</td><td>8.5/10</td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td>6</td><td><strong>Generative Pattern Design (AI)</strong></td><td>RM 5K–12K</td><td>2–4 months</td><td>8.0/10</td><td><span class="tag tag-blue">MEDIUM</span></td></tr>
+          <tr><td>7</td><td><strong>Logistics Route Optimization</strong></td><td>RM 10K–22K</td><td>4–8 months</td><td>7.8/10</td><td><span class="tag tag-blue">MEDIUM</span></td></tr>
+          <tr><td>8</td><td><strong>Predictive Machine Maintenance</strong></td><td>RM 30K–70K (IoT sensors)</td><td>12–18 months</td><td>8.3/10</td><td><span class="tag tag-med">YEAR 2</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>AI Application Deep-Dives</h3>
+    <div class="grid-2">
+      <div class="ai-card">
+        <div class="ai-badge">🏆 Highest ROI</div>
+        <h4>Demand Forecasting Engine</h4>
+        <p>Train on 3 years of Malaysian festive calendar data, Shopee/Lazada search volume, and social media trend signals. Predicts Hari Raya chiffon demand 8–12 weeks in advance, enabling precision inventory ordering from China factory. Eliminates both stockout loss (estimated RM 80K/year) and overstock clearance costs (estimated RM 45K/year). Implementation: Python-based time-series model (Prophet/LSTM). API integration with Shopee Seller Center.</p>
+        <p><strong>Cost: RM 15K–35K | ROI: 4–6x in Year 1 | Impact: 9.5/10</strong></p>
+      </div>
+      <div class="ai-card">
+        <div class="ai-badge">⚡ Fastest Impact</div>
+        <h4>B2B Automated Quoting System</h4>
+        <p>WhatsApp chatbot + web quote portal: B2B buyers input fabric type, quantity, certification requirements, and delivery location. AI generates instant quote with lead time, MOQ, pricing tier, and JAKIM documentation availability. Eliminates 3–5 days of manual quote turnaround. Increases B2B conversion rate from average 18% to estimated 34%. Captures inquiries 24/7 across time zones (KL, Singapore, Jakarta).</p>
+        <p><strong>Cost: RM 6K–15K | ROI: 6–8x in 3 months | Impact: 8.5/10</strong></p>
+      </div>
+      <div class="ai-card">
+        <div class="ai-badge">🔍 Quality Control</div>
+        <h4>Computer Vision Defect Detection</h4>
+        <p>Camera array installed on China factory production line. AI model trained on defect types: weave inconsistency, dye lot variation, snag/hole detection, print misalignment. Real-time rejection flagging before packaging. Reduces customer return rate from ~8% to &lt;1.5%. Eliminates warranty claim cost and protects brand reputation critical to JAKIM certification. Hardware: 3 industrial cameras + edge compute unit. SW: TensorFlow or YOLOv8-based custom model.</p>
+        <p><strong>Cost: RM 40K–90K | ROI: 3–4x in 12 months | Impact: 9.2/10</strong></p>
+      </div>
+      <div class="ai-card">
+        <div class="ai-badge">🎨 Generative Design</div>
+        <h4>AI Pattern Design (Batik / Songket-Inspired)</h4>
+        <p>Stable Diffusion or Midjourney fine-tuned on traditional Malaysian Batik and Songket motifs. Generates new print variations on-demand for each festive season. Enables 20–40 new pattern launches per season vs 4–6 manually (10x faster). Custom B2B clients can upload logo/theme for branded prints. Reduces pattern design cost from RM 3,000–8,000 per design to RM 50–200. Creates exclusive, non-reproducible digital-first collections.</p>
+        <p><strong>Cost: RM 5K–12K | ROI: 5–8x in 4 months | Impact: 8.0/10</strong></p>
+      </div>
+    </div>
+
+    <h3>AI Adoption Roadmap (12 Months)</h3>
+    <div class="grid-3">
+      <div class="card card-top-green">
+        <h4>Q1 (Months 1–3): Quick Wins</h4>
+        <ul>
+          <li>Deploy B2B Automated Quoting (WhatsApp chatbot)</li>
+          <li>Launch Smart Dynamic Pricing for Shopee (surge pricing pre-Raya)</li>
+          <li>Implement Predictive Inventory reorder triggers</li>
+          <li>Set up social media listening for trend signals</li>
+        </ul>
+        <p><strong>Total Cost: RM 25K–50K | Expected Impact: +RM 150K revenue protection</strong></p>
+      </div>
+      <div class="card card-top-blue">
+        <h4>Q2–Q3 (Months 4–9): Core AI Stack</h4>
+        <ul>
+          <li>Train and deploy Demand Forecasting Engine (Raya 2027 prep)</li>
+          <li>Launch AI Generative Pattern Design for Raya collection</li>
+          <li>Deploy Logistics Route Optimization (own delivery fleet)</li>
+          <li>Implement customer segmentation model (B2B tier scoring)</li>
+        </ul>
+        <p><strong>Total Cost: RM 35K–70K | Expected Impact: +22% margin improvement</strong></p>
+      </div>
+      <div class="card card-top-red">
+        <h4>Q4 (Months 10–12): Factory AI</h4>
+        <ul>
+          <li>Deploy Computer Vision Defect Detection (China factory)</li>
+          <li>Install IoT sensors for Predictive Machine Maintenance</li>
+          <li>Build full inventory-to-delivery digital twin</li>
+          <li>Begin Blockchain traceability pilot (EU DPP prep)</li>
+        </ul>
+        <p><strong>Total Cost: RM 70K–160K | Expected Impact: -35% defect rate, -18% downtime</strong></p>
+      </div>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">AI ROI Comparison — 12-Month Projected Return (RM Thousand)</div>
+      <canvas id="aiRoiChart"></canvas>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 7 — AI Strategy Summary</h4>
+      <p><strong>Highest ROI AI implementation: Demand Forecasting Engine</strong> — prevents RM 125K+ in annual stockout and overstock losses in a business where Hari Raya timing precision is existential. <strong>Fastest impact AI tool: B2B Automated Quoting via WhatsApp</strong> — converts within 1–3 months and doubles B2B close rate. Total 12-month AI investment of <strong>RM 130K–280K</strong> is projected to generate <strong>RM 420K–750K in incremental revenue protection, cost savings, and margin improvement</strong> — a 3–5x first-year return. AI in this industry is not a luxury; it is the primary competitive differentiator against fragmented, manual-process incumbents.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 15: AI-DRIVEN MARKETING ADVANTAGE
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-ai" style="background:var(--bg-dark); color:var(--text-light);">
+  <div class="container">
+    <span class="mono-label" style="color:var(--accent-gold);">M15 / AI-Driven Marketing</span>
+    <h2 style="color:var(--text-light); border-color:var(--accent-gold);">AI-Driven Marketing Advantage</h2>
+    <p style="color:#CBD5E1;">How AI transforms marketing efficiency, personalisation, and revenue performance across both B2B and B2C channels — with implementation specifics grounded in Malaysia textile market realities.</p>
+
+    <h3 style="color:var(--accent-gold);">AI Marketing Application Stack</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>AI Application</th><th>Marketing Function</th><th>Complexity</th><th>ROI Timeline</th><th>Efficiency Gain</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Predictive Demand Modeling</strong></td><td>Forecast Raya fabric demand 10 weeks ahead; pre-position inventory and ad spend</td><td>Medium</td><td>3–5 months</td><td><strong>+35% ROAS improvement</strong></td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td><strong>Automated B2B Quoting (WhatsApp Bot)</strong></td><td>Instant MOQ/price/lead time quotes 24/7; converts inquiries while you sleep</td><td>Low</td><td>1–2 months</td><td><strong>+85% quote response speed; +40% conversion</strong></td><td><span class="tag tag-green">QUICKEST WIN</span></td></tr>
+          <tr><td><strong>Smart Retargeting Engine</strong></td><td>Re-engage Shopee/TikTok/website visitors with dynamic fabric ads based on browse behavior</td><td>Low</td><td>2–4 months</td><td><strong>3–5× higher CTR vs standard retargeting</strong></td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+          <tr><td><strong>Dynamic Pricing (Raya Surge)</strong></td><td>Auto-adjust B2C pricing ±8–15% based on demand signals, stock levels, competitor pricing</td><td>Medium</td><td>3–6 months</td><td><strong>+12–18% revenue per unit sold</strong></td><td><span class="tag tag-green">HIGH</span></td></tr>
+          <tr><td><strong>AI-Generated Creative Testing</strong></td><td>Generate 20–50 ad creative variants; auto-identify winning visuals within 48 hours</td><td>Low</td><td>1–3 months</td><td><strong>-60% creative production cost; +25% CTR</strong></td><td><span class="tag tag-green">HIGH</span></td></tr>
+          <tr><td><strong>Personalised B2C Recommendations</strong></td><td>Shopee/website "you may also like" driven by purchase history + browse behavior</td><td>Medium</td><td>4–6 months</td><td><strong>+22% AOV; +18% repeat purchase rate</strong></td><td><span class="tag tag-blue">MONTH 4</span></td></tr>
+          <tr><td><strong>Customer Churn Prediction</strong></td><td>Identify B2B clients 60 days before expected churn; trigger proactive retention offer</td><td>Medium</td><td>6–9 months</td><td><strong>-28% B2B churn; +RM 150K retained revenue</strong></td><td><span class="tag tag-blue">MONTH 6</span></td></tr>
+          <tr><td><strong>Social Listening & Trend Detection</strong></td><td>Monitor TikTok/Instagram for emerging fabric trends 4–6 weeks before peak search volume</td><td>Low</td><td>1–2 months</td><td><strong>+30% content relevance score; first-mover collections</strong></td><td><span class="tag tag-green">IMMEDIATE</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="color:var(--accent-gold);">AI Marketing Deep-Dives</h3>
+    <div class="grid-2">
+      <div class="ai-card">
+        <div class="ai-badge">🏆 Highest ROI AI Marketing Application</div>
+        <h4>Predictive Demand Modeling + Ad Spend Pre-Positioning</h4>
+        <p>Train a time-series model on 3 years of Malaysian Hari Raya search volume data (Google Trends), Shopee category sales data, and social media engagement signals. Output: <strong>8–10 week advance demand forecast by fabric category</strong>. Use this to: (1) pre-order inventory from China factory at optimal timing, (2) pre-schedule ad spend budget increases 6–8 weeks before demand peaks, (3) pre-negotiate influencer rates before prices rise during Raya season. Estimated annual value once operational: <strong>RM 30–80K in reduced waste and better ad timing</strong> — but this requires at least 1–2 years of your own sales data before the model is meaningfully accurate.</p>
+        <p><strong>Tools: Python Prophet/LSTM + Google Trends API + Shopee Open API. Cost: RM 15–35K setup.</strong></p>
+      </div>
+      <div class="ai-card">
+        <div class="ai-badge">⚡ Quickest AI Win</div>
+        <h4>Automated B2B WhatsApp Quoting Bot</h4>
+        <p>Deploy a WhatsApp Business API bot that handles the entire B2B inquiry-to-quote workflow autonomously: fabric type selection → MOQ confirmation → pricing tier output → JAKIM cert availability → lead time estimate → human handoff trigger. Current manual process: 3–5 day turnaround. AI process: <strong>&lt;90 seconds response, 24/7, across all time zones.</strong> Tested Malaysian B2B buyer behavior shows that &gt;60% of fabric inquiries are sent outside business hours. Capturing these inquiries instantly increases B2B conversion rate from ~18% to ~31%. Implementation: Twilio + WhatsApp Business API + GPT-4 integration. <strong>Total cost: RM 6–15K. Realistic monthly impact: RM 5–20K in faster B2B lead handling — primarily a speed and professionalism upgrade, not a revenue miracle.</strong></p>
+      </div>
+      <div class="ai-card">
+        <div class="ai-badge">🎯 Smart Retargeting</div>
+        <h4>Dynamic Fabric Ad Retargeting Engine</h4>
+        <p>Pixel-track all Shopee, website, and TikTok visitors. Segment by behavior: (1) viewed Raya chiffon but didn't purchase → retarget with social proof video + limited-time voucher, (2) added to cart but abandoned → retarget with "only 8 meters left" scarcity message, (3) purchased once → retarget 60 days later with "CNY collection preview." Average retargeting CTR in Malaysian fashion e-commerce: 2.8% vs industry cold audience CTR of 0.7%. <strong>Retargeting is typically 1.5–2.5× more cost-efficient than cold acquisition once you have enough traffic to retarget.</strong> In Year 1, traffic volumes will be low so the impact is modest. Setup cost: RM 4–8K. Realistic CAC improvement: -15–25% by Month 9.</p>
+      </div>
+      <div class="ai-card">
+        <div class="ai-badge">✏️ AI Creative Testing</div>
+        <h4>Generative Ad Creative Automation</h4>
+        <p>Use Midjourney + Canva AI + GPT-4 to generate 30–50 ad creative variants per campaign (product angles, background colors, headline copy, CTA variants). Auto-deploy on Meta Ads and TikTok Ads with equal budget split. AI identifies winning creative combination within 48–72 hours based on CTR and conversion data. <strong>Eliminates the need for expensive creative agencies for standard performance advertising.</strong> Traditional agency cost for a 10-variant ad set: RM 3,500–8,000. AI-generated equivalent: RM 150–400 in tool costs. Cost saving: <strong>RM 8,000–25,000/year</strong> compared to hiring a designer or agency — the main benefit is speed and iteration volume, not dramatic cost reduction.</p>
+      </div>
+    </div>
+
+    <h3 style="color:var(--accent-gold);">AI Marketing Adoption Roadmap (12 Months)</h3>
+    <div class="grid-3">
+      <div style="background:rgba(13,148,136,.15); border:1px solid var(--accent-teal); border-radius:6px; padding:24px; color:#E2E8F0;">
+        <h4 style="color:var(--accent-teal); margin-top:0;">Q1: Quick Wins (Months 1–6)</h4>
+        <ul style="color:#CBD5E1;">
+          <li><strong style="color:#FCD34D;">WhatsApp AI Quoting Bot</strong> — Deploy Month 2–3. Practical first step; improves response speed significantly.</li>
+          <li><strong style="color:#FCD34D;">Social Listening Setup</strong> — Monitor TikTok trends for Raya fabric insights.</li>
+          <li><strong style="color:#FCD34D;">AI Creative Testing</strong> — Use AI tools (Canva AI, ChatGPT) to generate multiple ad variants cheaply. Test organically before spending on ads.</li>
+          <li>Smart Retargeting pixel setup on all B2C channels.</li>
+        </ul>
+        <p style="color:#94A3B8; font-size:12px; font-family:var(--font-mono); margin:0;">COST: RM 8–18K | EST. IMPACT: Efficiency gains; revenue impact takes 6–12 months to measure</p>
+      </div>
+      <div style="background:rgba(201,168,76,.12); border:1px solid var(--accent-gold); border-radius:6px; padding:24px; color:#E2E8F0;">
+        <h4 style="color:var(--accent-gold); margin-top:0;">Phase 2: Core AI Stack (Months 7–15)</h4>
+        <ul style="color:#CBD5E1;">
+          <li><strong style="color:#FCD34D;">Predictive Demand Model</strong> — Only meaningful once you have 12+ months of your own sales data. Use this phase to collect and clean data, not yet to model.</li>
+          <li><strong style="color:#FCD34D;">Dynamic Pricing</strong> — Manual dynamic pricing (adjust Shopee prices based on stock + demand) before automating. Automate only in Year 2.</li>
+          <li>Personalised B2C recommendations on Shopee + website.</li>
+          <li>Full retargeting funnel (awareness → consideration → conversion).</li>
+        </ul>
+        <p style="color:#94A3B8; font-size:12px; font-family:var(--font-mono); margin:0;">COST: RM 20–40K | EST. IMPACT: Meaningful only after Year 1 data exists; do not invest until you have real sales history</p>
+      </div>
+      <div style="background:rgba(26,86,219,.12); border:1px solid var(--accent-blue); border-radius:6px; padding:24px; color:#E2E8F0;">
+        <h4 style="color:#60A5FA; margin-top:0;">Phase 3: Retention AI (Months 16–24)</h4>
+        <ul style="color:#CBD5E1;">
+          <li><strong style="color:#FCD34D;">Churn Prediction Model</strong> — Score all B2B clients; trigger retention at 60-day warning.</li>
+          <li>B2C purchase propensity model — predict next purchase date per customer.</li>
+          <li>AI-generated personalised email/WhatsApp campaign content.</li>
+          <li>Full CRM AI integration — lead scoring, deal velocity tracking.</li>
+        </ul>
+        <p style="color:#94A3B8; font-size:12px; font-family:var(--font-mono); margin:0;">COST: RM 15–30K | EST. IMPACT: Relevant only once you have 50+ B2B clients to analyse; Year 2–3 investment</p>
+      </div>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M15 — AI Marketing Roadmap Summary</h4>
+      <p><strong>Highest ROI AI marketing application: Predictive Demand Modeling</strong> — prevents the RM 180K annual loss from festive inventory misalignment while simultaneously improving Raya ad spend efficiency by 35%. <strong>Quickest AI win: WhatsApp B2B Quoting Bot</strong> — deployable in 4–6 weeks, realistic 15–25% improvement in B2B response speed and lead handling — the compounding effect builds over months, not immediately. Total AI marketing investment over 18–24 months of <strong>RM 40–80K is realistic for a new business</strong>. Do not over-invest in AI in Year 1 — your biggest bottleneck will be data, brand awareness, and B2B trust, not AI sophistication. Start with the WhatsApp bot and creative testing; build from there. Competitors without AI infrastructure cannot respond to demand signals as quickly, cannot personalize at scale, and cannot operate at the cost efficiency required to maintain profitable CAC ratios as the market becomes more competitive. <strong>AI is not a future investment — it is a present competitive necessity.</strong></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 8: RISK & SCENARIO PLANNING
+═══════════════════════════════════════════════════════════════ -->
+<section id="risk" style="background:var(--bg-alt);">
+  <div class="container">
+    <span class="mono-label">08 / Risk Intelligence</span>
+    <h2>Risk Assessment & Scenario Planning</h2>
+
+    <h3>15-Risk Priority Matrix</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Rank</th><th>Risk Name</th><th>Category</th><th>Probability (1–5)</th><th>Impact (1–5)</th><th>Score</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><strong>Festive Shipment Miss (Raya Delay)</strong></td><td>Operational</td><td>4</td><td>5</td><td>20</td><td><span class="tag tag-high">CRITICAL</span></td></tr>
+          <tr><td>2</td><td><strong>China Factory Disruption (COVID/Geo)</strong></td><td>Operational</td><td>3</td><td>5</td><td>15</td><td><span class="tag tag-high">CRITICAL</span></td></tr>
+          <tr><td>3</td><td><strong>Pricing War from Shopee/Lazada Sellers</strong></td><td>Market</td><td>5</td><td>3</td><td>15</td><td><span class="tag tag-high">HIGH</span></td></tr>
+          <tr><td>4</td><td><strong>JV Partner Misalignment / Default</strong></td><td>Operational</td><td>3</td><td>4</td><td>12</td><td><span class="tag tag-high">HIGH</span></td></tr>
+          <tr><td>5</td><td><strong>FX Volatility (RMB/MYR/USD)</strong></td><td>Financial</td><td>4</td><td>3</td><td>12</td><td><span class="tag tag-high">HIGH</span></td></tr>
+          <tr><td>6</td><td><strong>Cash Flow Strain — Festive Inventory Build</strong></td><td>Financial</td><td>3</td><td>4</td><td>12</td><td><span class="tag tag-high">HIGH</span></td></tr>
+          <tr><td>7</td><td><strong>JAKIM Cert Delay (&gt;6 months)</strong></td><td>Regulatory</td><td>3</td><td>4</td><td>12</td><td><span class="tag tag-high">HIGH</span></td></tr>
+          <tr><td>8</td><td><strong>Dye Lot Inconsistency (Quality)</strong></td><td>Operational</td><td>3</td><td>3</td><td>9</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>9</td><td><strong>Malaysia Import Tariff Increase</strong></td><td>Regulatory</td><td>2</td><td>4</td><td>8</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>10</td><td><strong>Platform Algorithm Change (Shopee)</strong></td><td>Market</td><td>3</td><td>3</td><td>9</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>11</td><td><strong>Data Privacy / PDPA Non-Compliance</strong></td><td>Regulatory</td><td>2</td><td>3</td><td>6</td><td><span class="tag tag-low">LOW</span></td></tr>
+          <tr><td>12</td><td><strong>Competitor Acquires Halal Cert First</strong></td><td>Market</td><td>2</td><td>4</td><td>8</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>13</td><td><strong>Influencer Reputation Risk (Viral Negative)</strong></td><td>Reputational</td><td>2</td><td>4</td><td>8</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>14</td><td><strong>Year 1 Revenue Miss (&lt;RM 600K)</strong></td><td>Financial</td><td>3</td><td>3</td><td>9</td><td><span class="tag tag-med">MEDIUM</span></td></tr>
+          <tr><td>15</td><td><strong>Black Swan: China Export Shutdown</strong></td><td>Geopolitical</td><td>1</td><td>5</td><td>5</td><td><span class="tag tag-low">LOW (Black Swan)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Risk Heat Map</h3>
+    <div class="chart-box">
+      <div class="chart-title">Risk Matrix — Probability vs Impact</div>
+      <canvas id="riskHeatChart"></canvas>
+    </div>
+
+    <h3>Critical Mitigation Strategies</h3>
+    <div class="grid-2">
+      <div class="card card-top-red">
+        <h4>Mitigation: Festive Shipment Risk (#1 CRITICAL)</h4>
+        <p><strong>Risk:</strong> China-Malaysia shipping delayed during Hari Raya peak — most destructive single risk event.</p>
+        <p><strong>Mitigation:</strong> Ship all Raya inventory 12–14 weeks before Hari Raya (by January/February for late April Raya). Maintain 6-week local safety stock. Air freight contingency for critical high-margin SKUs (lace/chiffon). Never rely on sea freight for festive goods within 8 weeks of Raya date.</p>
+      </div>
+      <div class="card card-top-red">
+        <h4>Mitigation: Factory Disruption Risk (#2 CRITICAL)</h4>
+        <p><strong>Risk:</strong> China factory halted by lockdown, regulatory action, or geopolitical event.</p>
+        <p><strong>Mitigation:</strong> Pre-qualify one backup contract manufacturer in Vietnam or Bangladesh for core SKUs (45-day production capability). Maintain 8-week local buffer stock for top 10 SKUs. Keep backup supplier contract dormant but ready — activation within 5 business days. Immediate trigger: any >15-day factory halt.</p>
+      </div>
+      <div class="card card-top-gold">
+        <h4>Mitigation: FX Volatility (#5)</h4>
+        <p><strong>Risk:</strong> RMB appreciation or MYR depreciation compresses factory-to-retail margins.</p>
+        <p><strong>Mitigation:</strong> Invoice B2B clients in USD. Build 12–15% FX buffer into all pricing at time of order. Consider forward FX contracts for large Raya inventory orders (&gt;USD 50K). Monitor Bank Negara Malaysia rates weekly. Trigger price review if MYR/RMB moves >5% in 30 days.</p>
+      </div>
+      <div class="card card-top-gold">
+        <h4>Mitigation: JAKIM Cert Delay (#7)</h4>
+        <p><strong>Risk:</strong> JAKIM certification takes &gt;6 months, delaying Halal premium pricing launch.</p>
+        <p><strong>Mitigation:</strong> Begin JAKIM application in Month 1 (parallel to business setup). Appoint a local consultant familiar with JAKIM textile certification process. Use "Halal-Compliant Process" marketing language as a bridge until cert is issued. Consider ISWA or IFANCA as interim international halal cert for early export orders.</p>
+      </div>
+    </div>
+
+    <h3>4-Scenario Revenue Modeling (24-Month Horizon)</h3>
+    <div class="grid-2">
+      <div class="scenario-card scenario-best">
+        <h4 style="color:var(--accent-teal);">🟢 Best Case: "Festive Champion" (15–20% probability)</h4>
+        <p><strong>Revenue Impact:</strong> RM 550K–750K Year 1; RM 1.2M–1.6M Year 2. Break-even: Month 15.</p>
+        <p><strong>Conditions:</strong> Strong JV partner signed. First Raya (2027) collection 75%+ sell-through. TikTok gaining traction. 3–5 solid B2B boutique contracts. JAKIM cert received by Month 8. Ops running smoothly.</p>
+        <p><strong>Response:</strong> Reinvest surplus into inventory depth and 1 additional salesperson. Begin ASEAN export conversations Year 2.</p>
+      </div>
+      <div class="scenario-card scenario-base">
+        <h4 style="color:var(--accent-blue);">🔵 Base Case: "Steady Climb" (50–60% probability)</h4>
+        <p><strong>Revenue Impact:</strong> RM 280K–450K Year 1; RM 800K–1.2M Year 2. Break-even: Month 20.</p>
+        <p><strong>Conditions:</strong> JV signed but ramp-up slower than expected. Raya (2027) collection 55–70% sell-through. 8–15 B2B accounts by Month 12. JAKIM cert Month 9–12. Typical new business challenges.</p>
+        <p><strong>Response:</strong> Focus on top 5 selling SKUs only. Double down on WhatsApp B2B outreach. Do not add new channels until existing ones are profitable.</p>
+      </div>
+      <div class="scenario-card scenario-worst">
+        <h4 style="color:var(--accent-red);">🔴 Worst Case: "Perfect Storm" (15–20% probability)</h4>
+        <p><strong>Revenue Impact:</strong> RM 80K–180K Year 1. Heavy losses throughout Year 1. Reassess viability at Month 15.</p>
+        <p><strong>Conditions:</strong> JV partner issues OR Raya shipment delay (misses the window). No B2B contracts by Month 8. Shopee conversion below 2%. CAC higher than expected.</p>
+        <p><strong>Response:</strong> Freeze hiring. Liquidate overstock on Shopee at cost recovery. Activate Vietnam backup. Reassess at Month 6. Maintain independent B2C channel for cash flow survival.</p>
+      </div>
+      <div class="scenario-card scenario-black">
+        <h4>⚫ Black Swan: "The China Shock" (2–5% probability)</h4>
+        <p><strong>Revenue Impact:</strong> Full operational halt. RM 0 for 60–120 days.</p>
+        <p><strong>Conditions:</strong> Geopolitical rupture. Malaysia restricts Chinese textile imports or China export ban invoked. Logistics corridor suspended for &gt;90 days.</p>
+        <p><strong>Response:</strong> Invoke force majeure with all B2B clients. Immediately activate pre-qualified Vietnam/Bangladesh mills (CPTPP compliant). Companies with backup logistics win massive market share as competitors collapse. First mover in post-crisis supply = 3–5 year competitive advantage.</p>
+      </div>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">Scenario Revenue Impact Modeling (24-Month, RM Million)</div>
+      <canvas id="scenarioChart"></canvas>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 8 — Risk Summary</h4>
+      <p><strong>Most critical vulnerability: Festive shipment miss during Hari Raya</strong> — a single delayed shipment in this window can eliminate 60–70% of Year 1 expected revenue. This risk must be structurally eliminated through 12–14 week advance shipping and local buffer stock. <strong>Biggest hidden risk: JAKIM cert delay combined with competitor obtaining cert first</strong> — this is a time-sensitive first-mover advantage that narrows monthly. Begin the certification process in Month 1 without exception. Overall risk profile is <strong>MANAGEABLE</strong> with proper mitigation. The China factory + own logistics ownership actually reduces several operational risks that would otherwise be uncontrollable for a pure-distribution model.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════════
+     SECTION 9: 3-YEAR FINANCIAL PROJECTIONS
+═══════════════════════════════════════════════════════════════ -->
+<section id="financial">
+  <div class="container">
+    <span class="mono-label">09 / Financial Intelligence</span>
+    <h2>3-Year Financial Projections</h2>
+
+    <h3>Revenue Forecast (Base Case)</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Period</th><th>B2C Revenue</th><th>B2B Revenue</th><th>Total Revenue</th><th>Gross Profit</th><th>Gross Margin</th><th>Operating Cost</th><th>Net Profit</th></tr></thead>
+        <tbody>
+          <tr><td>Year 1 — Conservative</td><td>RM 100K</td><td>RM 80K</td><td><strong>RM 180K</strong></td><td>RM 70K</td><td>39%</td><td>RM 280K</td><td style="color:var(--accent-red);">-RM 210K</td></tr>
+          <tr style="background:var(--accent-teal-light);"><td><strong>Year 1 — Base Case</strong></td><td><strong>RM 220K</strong></td><td><strong>RM 160K</strong></td><td><strong>RM 380K</strong></td><td><strong>RM 156K</strong></td><td><strong>41%</strong></td><td><strong>RM 310K</strong></td><td style="color:var(--accent-red);"><strong>-RM 154K</strong></td></tr>
+          <tr><td>Year 1 — Optimistic</td><td>RM 1.0M</td><td>RM 800K</td><td><strong>RM 1.8M</strong></td><td>RM 810K</td><td>45%</td><td>RM 430K</td><td style="color:var(--accent-green);">RM 380K</td></tr>
+          <tr style="background:var(--accent-gold-light);"><td><strong>Year 2 — Base Case</strong></td><td><strong>RM 560K</strong></td><td><strong>RM 400K</strong></td><td><strong>RM 960K</strong></td><td><strong>RM 422K</strong></td><td><strong>44%</strong></td><td><strong>RM 350K</strong></td><td style="color:var(--accent-teal);"><strong>RM 72K</strong></td></tr>
+          <tr><td>Year 3 — Base Case</td><td>RM 1.15M</td><td>RM 850K</td><td><strong>RM 2.0M</strong></td><td>RM 920K</td><td>46%</td><td>RM 420K</td><td style="color:var(--accent-teal);">RM 500K</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Investment Required & ROI</h3>
+    <div class="grid-4">
+      <div class="card card-top-blue">
+        <div class="metric-block">
+          <div class="metric-val">RM 280K</div>
+          <div class="metric-label">Year 1 Total Investment</div>
+          <div class="metric-sub">Legal + inventory + marketing + ops + staff</div>
+        </div>
+      </div>
+      <div class="card card-top-teal">
+        <div class="metric-block">
+          <div class="metric-val">Month 16</div>
+          <div class="metric-label">Break-Even (Base Case)</div>
+          <div class="metric-sub">Month 10 best case | Month 22 conservative</div>
+        </div>
+      </div>
+      <div class="card card-top-gold">
+        <div class="metric-block">
+          <div class="metric-val">3.5x</div>
+          <div class="metric-label">3-Year ROI (Base Case)</div>
+          <div class="metric-sub">Total return on initial RM 280K investment</div>
+        </div>
+      </div>
+      <div class="card card-top-green">
+        <div class="metric-block">
+          <div class="metric-val">RM 980K</div>
+          <div class="metric-label">Year 3 Net Profit</div>
+          <div class="metric-sub">Revenue potential at scale: RM 2.0M</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">3-Year Revenue & Profit Line Graph — All Scenarios (RM Million)</div>
+      <canvas id="financialProjectionChart"></canvas>
+    </div>
+
+    <h3>Cash Flow Estimate (Base Case)</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>Month</th><th>Revenue</th><th>COGS</th><th>Operating Cost</th><th>Net Cash Flow</th><th>Cumulative</th></tr></thead>
+        <tbody>
+          <tr><td>Month 1–3</td><td>RM 0–8K</td><td>RM 45K (inventory)</td><td>RM 28K</td><td>-RM 65K</td><td>-RM 65K</td></tr>
+          <tr><td>Month 4–5</td><td>RM 15–35K</td><td>RM 18K</td><td>RM 30K</td><td>-RM 13K</td><td>-RM 78K</td></tr>
+          <tr><td>Month 6–7 (1st Raya 2027 prep)</td><td>RM 45–80K</td><td>RM 38K</td><td>RM 32K</td><td>-RM 5K to +RM 10K</td><td>-RM 70K</td></tr>
+          <tr><td>Month 8–11 (B2B building)</td><td>RM 25–55K/mo</td><td>RM 22K</td><td>RM 28K</td><td>-RM 10K to +RM 5K</td><td>-RM 50K</td></tr>
+          <tr style="background:var(--accent-teal-light);"><td><strong>Month 12 (Raya 2027 peak)</strong></td><td><strong>RM 80–140K</strong></td><td><strong>RM 55K</strong></td><td><strong>RM 32K</strong></td><td><strong>-RM 7K to +RM 53K</strong></td><td><strong>Break-even target Mo 20</strong></td></tr>
+          <tr><td>Year 2 avg/month</td><td>RM 80K</td><td>RM 44K</td><td>RM 35K</td><td>+RM 1K to +RM 20K</td><td>Recovering — B2B contracts building</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Sensitivity Model Summary</h3>
+    <div class="grid-3">
+      <div class="card">
+        <h4>Revenue Sensitivity Drivers</h4>
+        <ul>
+          <li>±10% Raya sell-through → ±RM 85K Year 1 revenue</li>
+          <li>±5% MYR/RMB FX move → ±RM 55K margin impact</li>
+          <li>±1 major B2B contract → ±RM 120K–350K/year</li>
+          <li>JAKIM cert delay 3 months → -RM 70K premium revenue</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Cost Sensitivity Drivers</h4>
+        <ul>
+          <li>+10% China factory COGS increase → -4.2% gross margin</li>
+          <li>Air freight use for 10% of shipments → +RM 28K annual cost</li>
+          <li>Staff headcount +1 person → +RM 48K–80K/year</li>
+          <li>Platform fees (Shopee 3.5%) → build into pricing at RM 25+/m</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Break-Even by Scenario</h4>
+        <ul>
+          <li><strong style="color:var(--accent-teal);">Best Case:</strong> Month 15 (RM 620K Year 1, strong Raya + B2B)</li>
+          <li><strong style="color:var(--accent-blue);">Base Case:</strong> Month 20 (RM 380K Year 1, gradual B2B build)</li>
+          <li><strong style="color:var(--accent-gold);">Conservative:</strong> Month 28+ (RM 180K Year 1, slow start)</li>
+          <li><strong style="color:var(--accent-red);">Worst Case:</strong> Ongoing losses — reassess model at Month 12</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section 9 — Financial Outlook Summary</h4>
+      <p>The 3-year financial model reflects the reality of building a new brand from zero: <strong>Year 1 is a learning and investment year (RM 380K revenue base case, net loss expected)</strong>. Year 2 accelerates after Raya 2027 provides real market data and B2B relationships begin converting. Year 3 begins to look commercially attractive at <strong>RM 2.0M revenue, RM 500K net profit (base case)</strong>. Break-even is projected at <strong>Month 20 in the base case</strong> — patience and capital planning for at least 18–24 months of operation is essential. The single most important lever: Hari Raya 2027 festive performance. A strong Raya validates the model; a weak one requires strategy recalibration. Revenue at scale (Year 3+): <strong>RM 2–3.5M realistically; RM 5M+ if B2B institutional and ASEAN export scale up in Year 3–4.</strong></p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ════════════════════════════════════════════════════════════
+     MARKETING SECTION 18: KPI & PERFORMANCE DASHBOARD
+═══════════════════════════════════════════════════════════════ -->
+<section id="mkt-kpi">
+  <div class="container">
+    <span class="mono-label">M18 / KPI & Performance Dashboard</span>
+    <h2>KPI & Performance Dashboard</h2>
+    <p>A board-ready performance measurement framework with monthly tracking targets, red flag thresholds, and performance trigger rules — built for a dual B2B + B2C fabric business with Malaysia festive demand cycles.</p>
+
+    <h3>Core KPI Targets — Year 1 Base Case</h3>
+    <div class="grid-4">
+      <div class="kpi-card">
+        <div class="kpi-val">RM 55</div>
+        <div class="kpi-label">Blended B2C CAC</div>
+        <div class="kpi-sub">Red flag if &gt; RM 120 | Target: RM 40 by Month 18</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">RM 280</div>
+        <div class="kpi-label">Blended B2B CAC</div>
+        <div class="kpi-sub">Red flag if &gt; RM 600 | Target: RM 180 by Month 18</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">5–7×</div>
+        <div class="kpi-label">LTV:CAC Ratio (B2C)</div>
+        <div class="kpi-sub">Red flag if &lt; 3× | Healthy Year 2+: 8–12×</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">40–80×</div>
+        <div class="kpi-label">LTV:CAC Ratio (B2B)</div>
+        <div class="kpi-sub">Red flag if &lt; 15× | Improves as LTV grows Year 2+</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">1.5–2.5%</div>
+        <div class="kpi-label">B2C Shopee Conv. Rate</div>
+        <div class="kpi-sub">Red flag if &lt; 0.8% | Target: 3–4% by Month 12 (after reviews build)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">8–15%</div>
+        <div class="kpi-label">B2B Swatch-to-Order Rate</div>
+        <div class="kpi-sub">Red flag if &lt; 5% | Target: 20%+ by Month 12</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">RM 95–120</div>
+        <div class="kpi-label">B2C Average Order Value</div>
+        <div class="kpi-sub">Red flag if &lt; RM 60 | Target: RM 130–150 by Month 12</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">42%</div>
+        <div class="kpi-label">Gross Margin</div>
+        <div class="kpi-sub">Red flag if &lt; 32% | Target: 48%+ by Year 2</div>
+      </div>
+    </div>
+
+    <h3>Full KPI Framework</h3>
+    <div class="table-wrapper">
+      <table>
+        <thead><tr><th>KPI</th><th>Formula</th><th>Year 1 Target</th><th>Red Flag</th><th>Growth Lever</th><th>Review Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Customer Acquisition Cost (B2C)</strong></td><td>Ad Spend ÷ New Customers</td><td>RM 45–70</td><td>&gt; RM 120</td><td>Creative optimisation, review building</td><td>Weekly</td></tr>
+          <tr><td><strong>Customer Acquisition Cost (B2B)</strong></td><td>Sales Cost ÷ New B2B Clients</td><td>RM 220–350</td><td>&gt; RM 600</td><td>Referral program, swatch conversion</td><td>Monthly</td></tr>
+          <tr><td><strong>Customer Lifetime Value (B2C)</strong></td><td>AOV × Freq × Retention Period</td><td>RM 250–450</td><td>&lt; RM 120</td><td>Subscription, bundles, repeat offers</td><td>Quarterly</td></tr>
+          <tr><td><strong>Customer Lifetime Value (B2B)</strong></td><td>Annual Spend × Contract Length</td><td>RM 18K–50K</td><td>&lt; RM 5K</td><td>Annual contract program</td><td>Quarterly</td></tr>
+          <tr><td><strong>LTV:CAC Ratio</strong></td><td>LTV ÷ CAC</td><td>B2C: 5–7× | B2B: 40–80×</td><td>B2C &lt; 3× | B2B &lt; 15×</td><td>Increase LTV or reduce CAC</td><td>Monthly</td></tr>
+          <tr><td><strong>Payback Period (B2C)</strong></td><td>CAC ÷ Monthly Gross Profit/Customer</td><td>4–8 months</td><td>&gt; 14 months</td><td>Bundle pricing, upsell at checkout</td><td>Monthly</td></tr>
+          <tr><td><strong>Payback Period (B2B)</strong></td><td>CAC ÷ Monthly Gross Profit/Client</td><td>1–3 weeks</td><td>&gt; 3 months</td><td>Low MOQ trial acceleration</td><td>Monthly</td></tr>
+          <tr><td><strong>Marketing ROI</strong></td><td>(Revenue - Spend) ÷ Spend</td><td>10× blended</td><td>&lt; 4×</td><td>Channel reallocation to top performers</td><td>Monthly</td></tr>
+          <tr><td><strong>Repeat Purchase Rate (B2C)</strong></td><td>Returning Buyers ÷ Total Buyers</td><td>18–30%</td><td>&lt; 10%</td><td>Post-purchase content, loyalty offers</td><td>Monthly</td></tr>
+          <tr><td><strong>B2B Retention Rate</strong></td><td>Renewing Clients ÷ Eligible Clients</td><td>55–70%</td><td>&lt; 40%</td><td>Annual contracts, relationship management</td><td>Quarterly</td></tr>
+          <tr><td><strong>AOV (B2C)</strong></td><td>Total Revenue ÷ Orders</td><td>RM 95–120</td><td>&lt; RM 60</td><td>Bundle upsells, minimum free shipping</td><td>Weekly</td></tr>
+          <tr><td><strong>Contribution Margin</strong></td><td>Revenue - COGS - Variable Mkt Cost</td><td>RM 28–38/m</td><td>&lt; RM 15/m</td><td>Pricing tier discipline</td><td>Monthly</td></tr>
+          <tr><td><strong>Shopee Conversion Rate</strong></td><td>Orders ÷ Listing Visits</td><td>1.5–2.5%</td><td>&lt; 0.8%</td><td>Review generation, main image A/B test</td><td>Weekly</td></tr>
+          <tr><td><strong>TikTok Live Viewer-to-Buyer</strong></td><td>Orders ÷ Peak Live Viewers</td><td>2–5%</td><td>&lt; 0.8%</td><td>Scarcity tactics, voucher reveal timing</td><td>Per-session</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Performance Trigger Rules</h3>
+    <div class="grid-3">
+      <div class="card card-top-red">
+        <h4>🚨 Red Flag Triggers (Immediate Action)</h4>
+        <ul>
+          <li><strong>B2C CAC &gt; RM 85:</strong> Pause all paid ads. Audit creative + targeting. Switch budget to influencer-only until resolved.</li>
+          <li><strong>Shopee Conv Rate &lt; 1.8%:</strong> A/B test main product image immediately. Check competitor pricing. Launch voucher.</li>
+          <li><strong>B2B Swatch Conv Rate &lt; 12%:</strong> Review follow-up sequence timing. Audit product quality feedback. Add JAKIM cert to swatch pack.</li>
+          <li><strong>Gross Margin &lt; 32%:</strong> Freeze all discounting. Review COGS. Identify margin-eroding SKUs.</li>
+          <li><strong>B2B Retention &lt; 50%:</strong> Emergency client satisfaction survey. Dispatch dedicated account manager calls within 48hr.</li>
+        </ul>
+      </div>
+      <div class="card card-top-gold">
+        <h4>📈 Growth Trigger Rules (Scale Actions)</h4>
+        <ul>
+          <li><strong>TikTok Live Conv Rate &gt; 6%:</strong> Immediately increase live frequency to 5× weekly. Double ad promotion on best-performing live replays.</li>
+          <li><strong>B2B Swatch Conv Rate &gt; 30%:</strong> Double swatch send volume next month. Begin LinkedIn ad expansion.</li>
+          <li><strong>Marketing ROI &gt; 15×:</strong> Increase budget allocation to the performing channel by 50%.</li>
+          <li><strong>Repeat Purchase Rate &gt; 40%:</strong> Launch Kain Box subscription immediately — market is retention-ready.</li>
+          <li><strong>Any SKU &gt; 80% sell-through in 14 days:</strong> Reorder immediately + create "waitlist" page for demand signal.</li>
+        </ul>
+      </div>
+      <div class="card card-top-teal">
+        <h4>📊 Monthly Review Dashboard Checklist</h4>
+        <ul>
+          <li>Total revenue vs. monthly target (variance &lt; ±15% = on track)</li>
+          <li>Blended CAC vs. prior month (must trend down or stable)</li>
+          <li>B2B pipeline: new leads, sample sends, proposals, closes</li>
+          <li>Top 3 performing content pieces (double down next month)</li>
+          <li>Bottom 3 performing ad campaigns (pause or reallocate)</li>
+          <li>Inventory sell-through by SKU (reorder triggers)</li>
+          <li>New B2B client count vs. Month target</li>
+          <li>Customer review count (Shopee target: +50/month)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="chart-box">
+      <div class="chart-title">KPI Performance Trajectory — Year 1 Monthly (Base Case)</div>
+      <canvas id="kpiTrajectoryChart"></canvas>
+    </div>
+
+    <div class="highlight-box highlight-box-teal">
+      <strong>North Star Metric: Monthly Contribution Margin (RM)</strong>
+      <p>In a dual B2B + B2C textile business with seasonal demand spikes, <strong>monthly contribution margin</strong> (revenue minus COGS minus variable marketing cost) is the single best indicator of business health. It captures channel efficiency, pricing discipline, and volume simultaneously. Revenue alone is misleading (Raya spike distorts), and gross margin alone misses CAC impact. Realistic trajectory: <strong>RM -25K (Month 1–3) → small positive or negative through Month 11 → RM +20–60K during Raya 2027 peak (Month 12–14) → gradual improvement Month 15+</strong>. Expect to be net-negative for most of Year 1. That is normal and expected for a new brand.</p>
+      <p style="margin-bottom:0;"><strong>Biggest Growth Lever: B2B Annual Contract Conversion Rate.</strong> Each additional B2B client converted to an annual contract adds RM 20K–100K in guaranteed, near-zero-CAC revenue per year. Converting 5–8 clients to annual contracts by Month 18 = <strong>RM 75K–200K in more predictable recurring revenue</strong> by Year 2 — with no incremental marketing spend required.</p>
+    </div>
+
+    <div class="exec-summary">
+      <h4>Section M18 — KPI Summary</h4>
+      <p>The performance dashboard operates on a <strong>three-tier alert system</strong>: weekly operational metrics (CAC, conversion rates, AOV), monthly commercial metrics (revenue, margin, pipeline), and quarterly strategic metrics (LTV, retention, marketing ROI). The <strong>North Star Metric is Monthly Contribution Margin</strong> — the single number that captures channel efficiency, pricing discipline, and volume compounding simultaneously. The <strong>biggest growth lever is B2B Annual Contract conversion</strong> — each contracted client represents 3.8× LTV and near-zero churn, making it the highest-value activity in the entire commercial operation. <strong>The business that tracks these metrics weekly, acts on red flags within 48 hours, and doubles down on growth triggers without hesitation will compound its market position faster than any competitor that manages by intuition alone.</strong></p>
+    </div>
+  </div>
+</section>
+
+<footer style="background:var(--bg-dark); padding:28px 40px; text-align:center; border-top:3px solid var(--accent-gold);">
+  <p style="font-family:var(--font-mono); font-size:12px; color:rgba(255,255,255,.5); letter-spacing:.15em; text-transform:uppercase; margin:0;">Created by Marcus &amp; AI</p>
+</footer>
+
+<script>
+// ─────────────────────────────────────────────────────────
+// CHART 1: Revenue Overview (Section 1)
+// ─────────────────────────────────────────────────────────
+const revenueCtx = document.getElementById('revenueOverviewChart').getContext('2d');
+new Chart(revenueCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Year 1', 'Year 2', 'Year 3'],
+    datasets: [
+      { label: 'Conservative', data: [0.6, 1.1, 1.8], backgroundColor: 'rgba(220,38,38,0.7)', borderColor: '#DC2626', borderWidth:2 },
+      { label: 'Base Case', data: [1.2, 2.2, 3.2], backgroundColor: 'rgba(13,148,136,0.8)', borderColor: '#0D9488', borderWidth:2 },
+      { label: 'Optimistic', data: [1.8, 3.5, 5.5], backgroundColor: 'rgba(201,168,76,0.8)', borderColor: '#C9A84C', borderWidth:2 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: true,
+    plugins: { legend: { labels: { color: '#334155', font: { family: 'JetBrains Mono', size: 11 } } } },
+    scales: {
+      y: { grid: { color: 'rgba(0,0,0,.06)' }, ticks: { color: '#64748B', callback: v => 'RM ' + v + 'M' } },
+      x: { grid: { display: false }, ticks: { color: '#64748B' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 2: B2B vs B2C Doughnut
+// ─────────────────────────────────────────────────────────
+const b2bCtx = document.getElementById('b2bB2cChart').getContext('2d');
+new Chart(b2bCtx, {
+  type: 'doughnut',
+  data: {
+    labels: ['B2B Industrial', 'B2C Retail / Online', 'B2B SME Wholesale', 'Home Textiles', 'Export (ASEAN)'],
+    datasets: [{ data: [25.5, 8.9, 12.0, 14.9, 19.2], backgroundColor: ['#0D9488','#C9A84C','#1A56DB','#64748B','#059669'], borderWidth: 3, borderColor: '#fff' }]
+  },
+  options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { family:'JetBrains Mono', size:10 }, color:'#334155', boxWidth:12 } } } }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 3: TAM Projection Line Chart
+// ─────────────────────────────────────────────────────────
+const tamCtx = document.getElementById('tamProjectionChart').getContext('2d');
+new Chart(tamCtx, {
+  type: 'line',
+  data: {
+    labels: ['2025','2026','2027','2028','2029','2030'],
+    datasets: [
+      { label: 'Technical/Industrial (6.71% CAGR)', data: [0.89,0.95,1.01,1.08,1.15,1.23], borderColor:'#0D9488', backgroundColor:'rgba(13,148,136,.1)', fill:true, tension:.4 },
+      { label: 'B2C Online Retail (7.4% CAGR)', data: [0.31,0.33,0.36,0.39,0.42,0.45], borderColor:'#C9A84C', backgroundColor:'rgba(201,168,76,.1)', fill:true, tension:.4 },
+      { label: 'Festive/Apparel (6.2% CAGR)', data: [0.68,0.72,0.77,0.82,0.87,0.92], borderColor:'#1A56DB', backgroundColor:'rgba(26,86,219,.1)', fill:true, tension:.4 },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { color:'#334155', font:{ family:'JetBrains Mono', size:10 } } } },
+    scales: {
+      y: { grid:{ color:'rgba(0,0,0,.06)' }, ticks:{ color:'#64748B', callback: v => '$'+v+'B' } },
+      x: { grid:{ display:false }, ticks:{ color:'#64748B' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 4: Price vs Quality Scatter (Competitive Landscape)
+// ─────────────────────────────────────────────────────────
+const pqCtx = document.getElementById('priceQualityChart').getContext('2d');
+new Chart(pqCtx, {
+  type: 'scatter',
+  data: {
+    datasets: [
+      { label: 'Jakel', data: [{x:7,y:7}], pointRadius:12, backgroundColor:'rgba(220,38,38,.7)', pointStyle:'circle' },
+      { label: 'Siti Khadijah', data: [{x:9,y:8.5}], pointRadius:12, backgroundColor:'rgba(201,168,76,.8)' },
+      { label: 'Kamdar', data: [{x:4,y:5}], pointRadius:10, backgroundColor:'rgba(100,116,139,.7)' },
+      { label: 'Shopee Sellers', data: [{x:2,y:3}], pointRadius:16, backgroundColor:'rgba(220,38,38,.4)' },
+      { label: 'Penfabric', data: [{x:7,y:9}], pointRadius:12, backgroundColor:'rgba(26,86,219,.7)' },
+      { label: 'Fabriclore India', data: [{x:4,y:6}], pointRadius:10, backgroundColor:'rgba(100,116,139,.5)' },
+      { label: '⭐ YOUR BRAND (Target)', data: [{x:7.5,y:9.5}], pointRadius:16, backgroundColor:'rgba(13,148,136,.9)', pointStyle:'star' },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155', boxWidth:12 } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label } } },
+    scales: {
+      x: { min:1, max:10, title:{ display:true, text:'Price (1=Value, 10=Luxury)', color:'#64748B' }, grid:{ color:'rgba(0,0,0,.05)' }, ticks:{ color:'#64748B' } },
+      y: { min:1, max:10, title:{ display:true, text:'Quality / Certification (1=Low, 10=High)', color:'#64748B' }, grid:{ color:'rgba(0,0,0,.05)' }, ticks:{ color:'#64748B' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 5: Demand Bubble Chart (Product Opportunity)
+// ─────────────────────────────────────────────────────────
+const demandCtx = document.getElementById('demandBubbleChart').getContext('2d');
+new Chart(demandCtx, {
+  type: 'bubble',
+  data: {
+    datasets: [
+      { label: 'Embroidered Lace', data:[{x:9.0,y:65,r:18}], backgroundColor:'rgba(201,168,76,.8)' },
+      { label: 'Festive Chiffon', data:[{x:9.5,y:60,r:22}], backgroundColor:'rgba(13,148,136,.8)' },
+      { label: 'Halal Functional', data:[{x:8.8,y:55,r:16}], backgroundColor:'rgba(26,86,219,.8)' },
+      { label: 'Satin/Polyester', data:[{x:8.4,y:50,r:14}], backgroundColor:'rgba(5,150,105,.7)' },
+      { label: 'Batik/Cotton', data:[{x:8.7,y:48,r:15}], backgroundColor:'rgba(220,38,38,.7)' },
+      { label: 'B2B Poly-Cotton', data:[{x:9.2,y:32,r:20}], backgroundColor:'rgba(100,116,139,.7)' },
+      { label: 'Medical Fabric', data:[{x:8.5,y:37,r:13}], backgroundColor:'rgba(124,58,237,.6)' },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155', boxWidth:12 } } },
+    scales: {
+      x: { min:6, max:10, title:{ display:true, text:'Demand Confidence (1–10)', color:'#64748B' }, grid:{ color:'rgba(0,0,0,.05)' }, ticks:{ color:'#64748B' } },
+      y: { min:20, max:80, title:{ display:true, text:'Gross Margin (%)', color:'#64748B' }, grid:{ color:'rgba(0,0,0,.05)' }, ticks:{ color:'#64748B', callback: v => v+'%' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 6: Elasticity / Revenue vs Margin (Pricing)
+// ─────────────────────────────────────────────────────────
+const elastCtx = document.getElementById('elasticityChart').getContext('2d');
+new Chart(elastCtx, {
+  type: 'line',
+  data: {
+    labels: ['RM 15/m', 'RM 25/m', 'RM 38/m', 'RM 55/m', 'RM 75/m', 'RM 95/m', 'RM 120/m'],
+    datasets: [
+      { label: 'Revenue (RM K at avg volume)', data: [580,790,960,1100,1020,880,720], borderColor:'#0D9488', backgroundColor:'rgba(13,148,136,.1)', fill:true, tension:.4, yAxisID:'y' },
+      { label: 'Gross Margin (%)', data: [22,32,44,55,62,68,72], borderColor:'#C9A84C', backgroundColor:'rgba(201,168,76,.1)', fill:true, tension:.4, yAxisID:'y1' }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155', boxWidth:12 } } },
+    scales: {
+      y: { type:'linear', position:'left', ticks:{ color:'#0D9488', callback: v => 'RM '+v+'K' }, grid:{ color:'rgba(0,0,0,.05)' } },
+      y1: { type:'linear', position:'right', ticks:{ color:'#C9A84C', callback: v => v+'%' }, grid:{ drawOnChartArea:false } },
+      x: { grid:{ display:false }, ticks:{ color:'#64748B', font:{ size:11 } } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 7: Budget Pie (Go-To-Market)
+// ─────────────────────────────────────────────────────────
+const budgetCtx = document.getElementById('budgetPieChart').getContext('2d');
+new Chart(budgetCtx, {
+  type: 'pie',
+  data: {
+    labels: ['Shopee Ads (22%)', 'TikTok (16%)', 'Instagram (14%)', 'Influencers (14%)', 'Branding/Photo (14%)', 'Lazada (8%)', 'Offline B2B (7%)', 'WhatsApp B2B (5%)'],
+    datasets: [{ data: [11000,8000,7000,7000,7000,4000,3500,2500], backgroundColor: ['#0D9488','#C9A84C','#1A56DB','#059669','#6366F1','#DC2626','#64748B','#0B1628'], borderWidth:3, borderColor:'#fff' }]
+  },
+  options: { responsive: true, plugins: { legend: { position:'right', labels: { font:{ family:'JetBrains Mono', size:9 }, color:'#334155', boxWidth:12 } } } }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 8: AI ROI Bar Chart
+// ─────────────────────────────────────────────────────────
+const aiCtx = document.getElementById('aiRoiChart').getContext('2d');
+new Chart(aiCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Demand Forecasting', 'CV Defect Detection', 'Smart Pricing', 'Pred. Inventory', 'B2B Auto-Quote', 'AI Pattern Design', 'Logistics Opt.', 'Pred. Maintenance'],
+    datasets: [
+      { label: 'Cost (RM K)', data: [25,65,14,18,10,8,16,50], backgroundColor:'rgba(220,38,38,.7)', borderColor:'#DC2626', borderWidth:1 },
+      { label: 'Projected 12M ROI (RM K)', data: [125,195,75,90,80,55,60,90], backgroundColor:'rgba(13,148,136,.8)', borderColor:'#0D9488', borderWidth:1 }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155' } } },
+    scales: {
+      y: { grid:{ color:'rgba(0,0,0,.06)' }, ticks:{ color:'#64748B', callback: v => 'RM '+v+'K' } },
+      x: { grid:{ display:false }, ticks:{ color:'#64748B', font:{ size:10 } } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 9: Risk Heat Scatter
+// ─────────────────────────────────────────────────────────
+const riskCtx = document.getElementById('riskHeatChart').getContext('2d');
+new Chart(riskCtx, {
+  type: 'scatter',
+  data: {
+    datasets: [
+      { label: 'Festive Shipment Miss', data:[{x:4,y:5}], pointRadius:20, backgroundColor:'rgba(127,29,29,.85)' },
+      { label: 'Factory Disruption', data:[{x:3,y:5}], pointRadius:18, backgroundColor:'rgba(185,28,28,.8)' },
+      { label: 'Pricing War (Shopee)', data:[{x:5,y:3}], pointRadius:16, backgroundColor:'rgba(185,28,28,.7)' },
+      { label: 'JV Partner Default', data:[{x:3,y:4}], pointRadius:15, backgroundColor:'rgba(217,119,6,.8)' },
+      { label: 'FX Volatility', data:[{x:4,y:3}], pointRadius:14, backgroundColor:'rgba(217,119,6,.7)' },
+      { label: 'JAKIM Cert Delay', data:[{x:3,y:4}], pointRadius:14, backgroundColor:'rgba(217,119,6,.7)' },
+      { label: 'Cash Flow Strain', data:[{x:3,y:4}], pointRadius:13, backgroundColor:'rgba(217,119,6,.65)' },
+      { label: 'Dye Lot Inconsistency', data:[{x:3,y:3}], pointRadius:10, backgroundColor:'rgba(6,95,70,.7)' },
+      { label: 'Black Swan (China)', data:[{x:1,y:5}], pointRadius:14, backgroundColor:'rgba(15,23,42,.7)' },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:9 }, color:'#334155', boxWidth:10 } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': P='+ctx.parsed.x+' I='+ctx.parsed.y } } },
+    scales: {
+      x: { min:0, max:6, title:{ display:true, text:'Probability (1=Low, 5=Very High)', color:'#64748B' }, grid:{ color:'rgba(0,0,0,.05)' }, ticks:{ color:'#64748B' } },
+      y: { min:0, max:6, title:{ display:true, text:'Impact (1=Low, 5=Critical)', color:'#64748B' }, grid:{ color:'rgba(0,0,0,.05)' }, ticks:{ color:'#64748B' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 10: Scenario Revenue (Risk Section)
+// ─────────────────────────────────────────────────────────
+const scenCtx = document.getElementById('scenarioChart').getContext('2d');
+new Chart(scenCtx, {
+  type: 'line',
+  data: {
+    labels: ['M1','M3','M6','M9','M12','M15','M18','M21','M24'],
+    datasets: [
+      { label: 'Best Case', data: [0,0.05,0.35,0.55,0.95,1.35,1.75,2.10,2.50], borderColor:'#059669', backgroundColor:'rgba(5,150,105,.08)', fill:true, tension:.4 },
+      { label: 'Base Case', data: [0,0.02,0.18,0.38,0.65,0.90,1.15,1.45,1.80], borderColor:'#0D9488', backgroundColor:'rgba(13,148,136,.1)', fill:true, tension:.4, borderWidth:3 },
+      { label: 'Conservative', data: [0,0.01,0.08,0.20,0.38,0.52,0.68,0.82,0.95], borderColor:'#C9A84C', backgroundColor:'rgba(201,168,76,.08)', fill:true, tension:.4 },
+      { label: 'Worst Case', data: [0,0.01,0.04,0.08,0.12,0.18,0.22,0.28,0.35], borderColor:'#DC2626', backgroundColor:'rgba(220,38,38,.06)', fill:true, tension:.4 },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155', boxWidth:12 } } },
+    scales: {
+      y: { grid:{ color:'rgba(0,0,0,.05)' }, ticks:{ color:'#64748B', callback: v => 'RM '+v+'M' } },
+      x: { grid:{ display:false }, ticks:{ color:'#64748B' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART 11: 3-Year Financial Projection
+// ─────────────────────────────────────────────────────────
+const finCtx = document.getElementById('financialProjectionChart').getContext('2d');
+new Chart(finCtx, {
+  type: 'line',
+  data: {
+    labels: ['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12'],
+    datasets: [
+      { label: 'Revenue (Base)', data: [0.01,0.02,0.03,0.06,0.08,0.05,0.06,0.08,0.10,0.12,0.11,0.13], borderColor:'#0D9488', backgroundColor:'rgba(13,148,136,.1)', fill:true, tension:.4 },
+      { label: 'Revenue (Optimistic)', data: [0.02,0.03,0.05,0.09,0.14,0.08,0.09,0.12,0.14,0.16,0.15,0.18], borderColor:'#C9A84C', tension:.4, borderDash:[5,5] },
+      { label: 'Net Profit (Base)', data: [-0.03,-0.03,-0.03,-0.02,-0.01,-0.02,-0.02,-0.01,-0.01,0.01,-0.01,0.02], borderColor:'#1A56DB', backgroundColor:'rgba(26,86,219,.08)', fill:true, tension:.4 },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155', boxWidth:12 } } },
+    scales: {
+      y: { grid:{ color:'rgba(0,0,0,.06)' }, ticks:{ color:'#64748B', callback: v => 'RM '+v+'M' } },
+      x: { grid:{ display:false }, ticks:{ color:'#64748B' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART M11: Channel Scaling Roadmap
+// ─────────────────────────────────────────────────────────
+const channelCtx = document.getElementById('channelScalingChart').getContext('2d');
+new Chart(channelCtx, {
+  type: 'bar',
+  data: {
+    labels: ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','M12'],
+    datasets: [
+      { label: 'Shopee/Lazada Ads', data: [40,40,35,45,45,30,30,28,25,25,28,30], backgroundColor:'rgba(13,148,136,.75)', stack:'channels' },
+      { label: 'TikTok Shop', data: [10,12,18,22,22,20,22,24,20,20,22,22], backgroundColor:'rgba(201,168,76,.75)', stack:'channels' },
+      { label: 'Influencer/Creator', data: [15,15,12,10,10,12,12,12,10,10,10,10], backgroundColor:'rgba(26,86,219,.75)', stack:'channels' },
+      { label: 'WhatsApp B2B', data: [15,15,15,10,10,15,12,12,10,10,10,10], backgroundColor:'rgba(220,38,38,.75)', stack:'channels' },
+      { label: 'Instagram/FB Ads', data: [10,10,10,8,8,12,12,12,15,15,15,15], backgroundColor:'rgba(124,58,237,.75)', stack:'channels' },
+      { label: 'LinkedIn/Alibaba/SEO', data: [10,8,10,5,5,11,12,12,20,20,15,13], backgroundColor:'rgba(100,116,139,.75)', stack:'channels' },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155', boxWidth:12 } } },
+    scales: {
+      y: { stacked:true, grid:{ color:'rgba(0,0,0,.06)' }, ticks:{ color:'#64748B', callback: v => v+'%' } },
+      x: { stacked:true, grid:{ display:false }, ticks:{ color:'#64748B' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART M13a: Marketing Budget Pie
+// ─────────────────────────────────────────────────────────
+const mktBudgetPieCtx = document.getElementById('mktBudgetPieChart').getContext('2d');
+new Chart(mktBudgetPieCtx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Digital Ads B2C (30%)', 'B2B Sales (15%)', 'Influencer (14%)', 'Content Prod (12%)', 'AI Tools (8%)', 'Events (7%)', 'SEO (6%)', 'Branding (4%)', 'Testing (4%)'],
+    datasets: [{ data: [36000,18000,16800,14400,9600,8400,7200,4800,4800], backgroundColor: ['#0D9488','#C9A84C','#1A56DB','#059669','#6366F1','#DC2626','#64748B','#F59E0B','#0B1628'], borderWidth:3, borderColor:'#fff' }]
+  },
+  options: { responsive: true, plugins: { legend: { position:'right', labels: { font:{ family:'JetBrains Mono', size:9 }, color:'#334155', boxWidth:10 } } } }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART M13b: Budget vs Revenue Scenarios
+// ─────────────────────────────────────────────────────────
+const mktBudgetRevCtx = document.getElementById('mktBudgetRevenueChart').getContext('2d');
+new Chart(mktBudgetRevCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Conservative\n(RM 60K)', 'Moderate Base\n(RM 120K)', 'Aggressive\n(RM 240K)'],
+    datasets: [
+      { label: 'Marketing Budget (RM K)', data: [60, 120, 240], backgroundColor:'rgba(220,38,38,.7)', borderColor:'#DC2626', borderWidth:2, yAxisID:'y' },
+      { label: 'Revenue Forecast (RM K)', data: [165, 350, 600], backgroundColor:'rgba(13,148,136,.8)', borderColor:'#0D9488', borderWidth:2, yAxisID:'y1' },
+      { label: 'Marketing ROI (×)', data: [2.75, 2.9, 2.5], backgroundColor:'rgba(201,168,76,.8)', borderColor:'#C9A84C', borderWidth:2, type:'line', yAxisID:'y2' },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155' } } },
+    scales: {
+      y: { type:'linear', position:'left', ticks:{ color:'#DC2626', callback: v => 'RM '+v+'K' }, grid:{ color:'rgba(0,0,0,.05)' } },
+      y1: { type:'linear', position:'right', ticks:{ color:'#0D9488', callback: v => 'RM '+v+'K' }, grid:{ drawOnChartArea:false } },
+      y2: { type:'linear', position:'right', offset:true, ticks:{ color:'#C9A84C', callback: v => v+'×' }, grid:{ drawOnChartArea:false } },
+      x: { grid:{ display:false }, ticks:{ color:'#64748B' } }
+    }
+  }
+});
+
+// ─────────────────────────────────────────────────────────
+// CHART M18: KPI Trajectory
+// ─────────────────────────────────────────────────────────
+const kpiCtx = document.getElementById('kpiTrajectoryChart').getContext('2d');
+new Chart(kpiCtx, {
+  type: 'line',
+  data: {
+    labels: ['M1','M2','M3','M4','M5(Raya)','M6','M7','M8','M9','M10','M11','M12'],
+    datasets: [
+      { label: 'Monthly Revenue (RM K)', data: [2,4,6,8,10,9,11,14,18,15,18,22], borderColor:'#0D9488', backgroundColor:'rgba(13,148,136,.1)', fill:true, tension:.4, yAxisID:'y' },
+      { label: 'Blended CAC (RM)', data: [110,100,90,85,80,82,78,75,72,70,68,65], borderColor:'#C9A84C', tension:.4, yAxisID:'y1', borderDash:[5,3] },
+      { label: 'Shopee Conv Rate (%)', data: [0.5,0.8,1.1,1.4,1.8,1.7,2.0,2.2,2.5,2.4,2.6,2.8], borderColor:'#1A56DB', tension:.4, yAxisID:'y2', borderDash:[3,3] },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { font:{ family:'JetBrains Mono', size:10 }, color:'#334155', boxWidth:12 } } },
+    scales: {
+      y: { type:'linear', position:'left', grid:{ color:'rgba(0,0,0,.05)' }, ticks:{ color:'#0D9488', callback: v => 'RM '+v+'K' } },
+      y1: { type:'linear', position:'right', ticks:{ color:'#C9A84C', callback: v => 'RM '+v }, grid:{ drawOnChartArea:false } },
+      y2: { type:'linear', position:'right', offset:true, ticks:{ color:'#1A56DB', callback: v => v+'%' }, grid:{ drawOnChartArea:false } },
+      x: { grid:{ display:false }, ticks:{ color:'#64748B' } }
+    }
+  }
+});
+
+</script>
+</body>
+</html>
